@@ -1,4 +1,4 @@
 # LaTeX Generation
-*/*.aux
-*/*.log
-*/*.synctext.gz
+*.aux
+*.log
+*.synctex.gz
