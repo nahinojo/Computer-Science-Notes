@@ -1,0 +1,4 @@
+# LaTeX Generation
+*/*.aux
+*/*.log
+*/*.synctext.gz
