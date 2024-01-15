@@ -20,16 +20,16 @@
 \section*{Exercise Set 2.1}
 
 \subsection*{5 - b}
-"She is a mathematics major." is a proposition.
+"She is a mathematics major." is not a proposition. The statement's truth value depends on who "she" is referring to. If the pronoun refers to math major, then it is true. Otherwise, it is false. The statement may be either true or false in this case.
 
 \subsection*{5 - c}
 $128 = 2^6$ is a proposition.
 
 \subsection*{5 - d}
-$x = 2^6$ is not a proposition. The statement's truth value depends on the value of $x$. Since $x$ may or may not be $128$, the equation may be either true and false.
+$x = 2^6$ is not a proposition. The statement's truth value depends on the value of $x$. Since $x$ may or may not be $128$, the equation may be either true or false.
 
 \subsection*{8 - c}
-$ \sim h \ \wedge \sim w \ \wedge \sim q$
+$ \sim h \ \wedge \sim w \ \wedge \sim s$
 
 \subsection*{10 - e}
 $ \sim p \vee (q \wedge r)$
@@ -42,7 +42,7 @@ $(x < -7)\vee(x \geq 0)$
 
 \subsection*{39}
 $(num\_orders \geq 50$ or $num\_instock \leq 300)$ and 
-\\ $((num\_orders < 50$ or $num\_orders \geq 75)$ or $(num\_instock \leq 500)$
+\\ $(num\_orders < 50$ or $num\_orders \geq 75$ or $num\_instock \leq 500)$
 \subsection*{42}
 
 \begin{tabular}{c c c|c c|c|c|c}
@@ -58,13 +58,7 @@ $(num\_orders \geq 50$ or $num\_instock \leq 300)$ and
     F&F&F&T&T&F&F&F \\
 \end{tabular}
 \\ \\ \\
-The formula $((\sim p \wedge q)\wedge(q \wedge r))\wedge \sim q$ is a \textbf{contradiction}. This can also be understood considering the following proof:
-\begin{align*}
-    ((\sim p \wedge q)\wedge(q \wedge r))\wedge \sim q \\
-    (q \ \wedge \ \sim q) \wedge (\sim p \wedge q \wedge r) \\
-    \textbf{c} \wedge (\sim p \wedge q \wedge r) \\
-    \textbf{c}
-\end{align*}
+The formula $((\sim p \wedge q)\wedge(q \wedge r))\wedge \sim q$ is a \textbf{contradiction} because it is always false.
 \subsection*{49}
 \begin{enumerate}
     \item[a.] Commutative Law
@@ -79,8 +73,8 @@ The formula $((\sim p \wedge q)\wedge(q \wedge r))\wedge \sim q$ is a \textbf{co
     &\equiv ((p \wedge p) \ \wedge \sim q)\vee(p \wedge q) && \text{Associative Law}\\
     &\equiv (p \ \wedge \sim q)\vee(p \wedge q) && \text{Idempotent Law}\\
     &\equiv p \wedge (\sim q \vee q) && \text{Distributive Law}\\
-    &\equiv p \wedge \textbf{c} && \text{Negation Law}\\
-    &\equiv p && \text{Universal Bound Law}
+    &\equiv p \wedge \textbf{t} && \text{Negation Law}\\
+    &\equiv p && \text{Identity Law}
 \end{align*}
 
 \section*{Canvas Problem}

@@ -5,9 +5,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{geometry} % Adjust page margins
 \usepackage{titlesec} % Adjust section and subsection formatting
+
 \geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
 
-\title{\textbf{Assignment 1, Part 1: The Logic of Compound Statements}}
+\title{\textbf{Assignment 1, Part 2: The Logic of Conditional Statements}}
 \author{Noah Hinojos}
 \date{\today}
 
@@ -20,5 +21,183 @@
 \section*{Exercise Set 2.2}
 
 \subsection*{20 - c}
+The decimal expansion of $r$ is terminating and $r$ is not rational.
 
+\subsection*{20 - e}
+$x$ is nonnegative and $x$ is not positive and $x$ is not 0.
+
+\subsection*{20 - g}
+$n$ is divisble by 6, and either and $n$ is not divisible by $2$ or $n$ is not divisible by $3$.
+
+\subsection*{31}
+Given the logical equivalence: $$p \rightarrow (q \rightarrow r)\equiv(p \wedge q)\rightarrow r$$
+The converted statement is:
+$$(p \rightarrow (q \rightarrow r))\leftrightarrow((p \wedge q)\rightarrow r)$$
+\newline
+The corresponding truth table: \\ \\
+\begin{tabular}{c c c|c c|c c|c}
+  $p$ & $q$ & $r$ 
+  & $q \rightarrow r$ & $p \wedge q$ 
+  & $p \rightarrow (q \rightarrow r)$ & $(p \wedge q)\rightarrow r$ 
+  & $p \rightarrow (q \rightarrow r)\leftrightarrow (p \wedge q) \rightarrow r$ \\
+  \hline
+  T&T&T&T&T&T&T&T \\
+  T&T&F&F&T&F&F&T \\
+  T&F&T&T&F&T&T&T \\
+  T&F&F&T&F&T&T&T \\
+  F&T&T&T&F&T&T&T \\
+  F&T&F&F&F&T&T&T \\
+  F&F&T&T&F&T&T&T \\
+  F&F&F&T&F&T&T&T \\
+\end{tabular}
+\newline
+\newline
+\newline
+The converted statement is a \textbf{tautology}.
+
+\subsection*{39}
+If a security code is not entered, then this door will not open.
+
+\subsection*{45}
+If this computer progrem is correct, then it will not produce error messages during translation.
+
+\subsection*{46 - Preface}
+Before analyzing \#46(c, d, e, f), we need to consider the mathematical representation of the prompt "If compound X is boiling, then its temperature must be at least 150°C".
+\\ \\
+\underline{Definition}: Let $p$ be defined as "Compound X is boiling." and $q$ be defined as "Its temperature must be at least 150°C." 
+\\ \\
+The original statement therefore can be represented as $p \rightarrow q$. The corresponding truth table is as follows: \\ \\
+\begin{tabular}{c c|c}
+  $p$ & $q$ & $p \rightarrow q$ \\
+  \hline
+  T&T&T \\
+  T&F&F \\
+  F&T&T \\
+  F&F&T \\
+\end{tabular}
+\\ \\
+The proofs \#46(c, d, e, f) will test if the original statement being true results in the section's statement being true. Mathematically, the proofs test if $(p \rightarrow q) \rightarrow r$ is tautological, where $r$ represents the section's statement.
+
+\subsection*{46 - c}
+This section's statement can be represented as $p \leftrightarrow q$, where both $p$ and $q$ retain their definition from the Preface.
+\\ \\
+Lets compares this section's statement ($p \leftrightarrow q$) with the original statement ($p \rightarrow q$) using the tautological check noted in the Preface. The corresponding truth table is: \\ \\
+\begin{tabular}{c c|c c|c}
+  $p$ & $q$ 
+  & $p \rightarrow q$ & $p \leftrightarrow q$
+  & $(p \rightarrow q) \rightarrow (p \leftrightarrow q)$\\
+  \hline
+  T&T&T&T&T \\
+  T&F&F&F&T \\
+  F&T&T&F&F \\
+  F&F&T&T&T \\
+\end{tabular}
+\\ \\ \\
+The statement "Compound X will boil only if its temperature is at least 150°C." \textbf{is not necessarily true}. It is possible for Compound X to not boil and its temperature to be atleast 150°C. In this instance, the original statement remains true while this section's statement is false.
+
+\subsection*{46 - d}
+This section's statement can be represented as $\sim p \rightarrow \ \sim q$, where both $p$ and $q$ retain their definitions from the Preface.
+\\ \\
+Lets compares this section's statement ($\sim p \rightarrow \ \sim q$) with the original statement ($p \rightarrow q$) using the tautological check noted in the Preface. The corresponding truth table is:  \\ \\
+\begin{tabular}{c c|c c|c}
+  $p$ & $q$ 
+  & $p \rightarrow q$ & $\sim p \rightarrow \ \sim q$
+  & $(p \rightarrow q) \rightarrow (\sim p \rightarrow \ \sim q)$\\
+  \hline
+  T&T&T&T&T \\
+  T&F&F&F&T \\
+  F&T&T&T&T \\
+  F&F&T&T&T \\
+\end{tabular}
+\\ \\ \\
+The statement "If compound X is not boiling, then its temperature is less than 150°C." \textbf{must also be true}. This section's statement is the contrapositive of the original. This causes both statements are logically equivalent to each other, therefore this section's statement must be true if the original statement is true.
+
+\subsection*{46 - e}
+This section's statement can be represented as $p \rightarrow \ q$, where both $p$ and $q$ retain their definitions from the Preface.
+\\ \\
+The statement "A necessary condition for compound X to boil is that its temperature be at least 150°C." \textbf{must also be true}. This is because this section's statement's mathematical representation ($p \rightarrow \ q$) is equal to the original's statement's mathematical representation ($p \rightarrow \ q$). Because both statements are logically equivalent, this section's statement must be true when the original statement is true.
+
+\subsection*{46 - f}
+This section's statement can be represented as $q \rightarrow \ p$, where both $p$ and $q$ retain their definitions from the Preface.
+\\ \\
+Lets compares this section's statement ($q \rightarrow \ p$) with the original statement ($p \rightarrow q$) using the tautological check noted in the Preface. The corresponding truth table is:  \\ \\
+\begin{tabular}{c c|c c|c}
+  $p$ & $q$ 
+  & $p \rightarrow q$ & $q \rightarrow p$
+  & $(p \rightarrow q) \rightarrow (q \rightarrow p)$\\
+  \hline
+  T&T&T&T&T \\
+  T&F&F&T&T \\
+  F&T&T&F&F \\
+  F&F&T&T&T \\
+\end{tabular}
+\\ \\ \\
+The statement "A sufficient condition for compound X to boil is that its temperature be at least 150°C." \textbf{is not necessarily true}. It is possible for Compound X to not boil and its temperature to be atleast 150°C. In this instance, the original statement remains true while this section's statement is false.
+
+\subsection*{50 - a}
+\begin{align*}
+  &(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \wedge q) \rightarrow r) \\
+  &\equiv (p \rightarrow (\sim q \vee r)) \leftrightarrow ((p \wedge q) \rightarrow r) \\
+  &\equiv (p \rightarrow (\sim q \vee r)) \leftrightarrow (\sim (p \wedge q) \vee r) \\
+  &\equiv (\sim p \vee (\sim q \vee r)) \leftrightarrow (\sim (p \wedge q) \vee r) \\
+  &\equiv (\sim (\sim p \vee (\sim q \vee r)) \vee (\sim (p \wedge q) \vee r)) \wedge \sim (\sim (p \wedge q) \vee r) \vee (\sim p \vee (\sim q \vee r))\\
+\end{align*}
+
+\subsection*{50 - b}
+Continuing from 50 - a:
+\begin{align*}
+  &\equiv (\sim (\sim p \vee (\sim q \vee r)) \vee (\sim (p \wedge q) \vee r)) \wedge \sim (\sim p \wedge q) \vee r) \vee (\sim p \vee (\sim q \vee r))\\
+  &\equiv \ \sim (\sim p \vee (\sim q \vee r)) \ \wedge \sim (\sim (p \wedge q) \vee r)) \wedge \sim (\sim (p \wedge q) \vee r) \vee (\sim p \vee (\sim q \vee r))\\
+  &\equiv \ \sim (\sim p \vee (\sim q \vee r)) \ \wedge \sim (\sim (p \wedge q) \vee r)) \wedge \sim (\sim (p \wedge q) \vee r) \vee (\sim p \vee (\sim (q \ \wedge \sim r))\\
+  &\equiv \ \sim (\sim p \vee (\sim (q \ \wedge \sim r)) \ \wedge \sim (\sim (p \wedge q) \vee r)) \wedge \sim (\sim ((p \wedge q) \ \wedge \sim r)) \vee (\sim p \vee (\sim (q \ \wedge \sim r))\\
+  &\equiv \ (p \wedge ((q \ \wedge \sim r)) \ \wedge \sim (\sim (p \wedge q) \vee r)) \wedge \sim (\sim ((p \wedge q) \ \wedge \sim r)) \vee (\sim p \vee (\sim (q \ \wedge \sim r))\\
+  &\equiv \ (p \wedge ((q \ \wedge \sim r)) \wedge ((p \wedge q) \ \wedge \sim r) \ \wedge \sim (\sim ((p \wedge q) \ \wedge \sim r)) \vee (\sim p \vee (\sim (q \ \wedge \sim r))\\
+  &\equiv \ (p \wedge ((q \ \wedge \sim r)) \wedge ((p \wedge q) \ \wedge \sim r) \ \wedge \sim (\sim ((p \wedge q) \ \wedge \sim r)) \vee (\sim (p \wedge (q \ \wedge \sim r))\\
+  &\equiv \ (p \wedge ((q \ \wedge \sim r)) \wedge ((p \wedge q) \ \wedge \sim r) \wedge ((p \wedge q) \ \wedge \sim r) \wedge (p \wedge (q \ \wedge \sim r))\\
+\end{align*}
+
+\section*{Canvas Problems}
+
+\subsection*{1}
+
+\begin{align*}
+  \textbf{t} &\equiv ((p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow (p \rightarrow r) \\
+  &\equiv ((p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow (\sim p \vee r) \\
+  &\equiv ((p \rightarrow q) \wedge (\sim q \vee r)) \rightarrow (\sim p \vee r) \\
+  &\equiv ((\sim p \vee q) \wedge (\sim q \vee r)) \rightarrow (\sim p \vee r) \\
+  &\equiv \ \sim((\sim p \vee q) \wedge (\sim q \vee r)) \vee (\sim p \vee r) \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (\sim q \vee r)\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (\sim q \vee r)\ \vee \sim p \vee (\sim p \wedge q) \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (\sim q \vee r)\ \vee \sim p \ \vee \sim (p \ \vee \sim q)\vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (p \ \vee \sim q) \ \vee \sim (\sim q \vee r)\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (\sim q \vee p) \ \vee \sim (\sim q \vee r)\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim ((\sim q \vee p) \wedge (\sim q \vee r))\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \ \vee \sim (\sim q \vee (p \wedge r))\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \vee q \vee (p \wedge r)\ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \vee q \vee (r \wedge p)\ \vee \sim p \vee (r \vee (r \wedge p)) \\
+  &\equiv \ \sim(\sim p \vee q) \vee q \vee (r \wedge p)\ \vee \sim p \vee r \vee (r \wedge p) \\
+  &\equiv \ \sim(\sim p \vee q) \vee q \ \vee \sim p \vee r \vee (r \wedge p) \vee (r \wedge p)\ \\
+  &\equiv \ \sim(\sim p \vee q) \vee q \ \vee \sim p \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \vee (q \ \vee \sim p) \vee r \\
+  &\equiv \ \sim(\sim p \vee q) \vee (\sim p \vee q) \vee r \\
+  &\equiv \textbf{t} \vee r \\
+  &\equiv \textbf{t} \\
+\end{align*}
+
+\subsection*{2 - a}
+\begin{align*}
+  &((p \vee q) \wedge (p \rightarrow r) \wedge (q \rightarrow r)) \rightarrow r \\
+  &\equiv ((p \vee q) \wedge (\sim p \vee r) \wedge (q \rightarrow r)) \rightarrow r \\
+  &\equiv ((p \vee q) \wedge (\sim p \vee r) \wedge (\sim q \vee r)) \rightarrow r \\
+  &\equiv \ \sim ((p \vee q) \wedge (\sim p \vee r) \wedge (\sim q \vee r)) \vee r \\
+\end{align*}
+\subsection*{2 - b}
+Continuing from 2 - a:
+\begin{align*}
+  &\equiv \ \sim ((p \vee q) \wedge (\sim p \vee r) \wedge (\sim q \vee r)) \vee r \\
+  &\equiv \ \sim (\sim(\sim p \ \wedge \sim q) \wedge (\sim p \vee r) \wedge (\sim q \vee r)) \vee r \\
+  &\equiv \ \sim (\sim(\sim p \ \wedge \sim q) \ \wedge \sim (p \ \wedge \sim r) \wedge (\sim q \vee r)) \vee r \\
+  &\equiv \ \sim (\sim(\sim p \ \wedge \sim q) \ \wedge \sim (p \ \wedge \sim r) \ \wedge \sim (q \ \wedge \sim r)) \vee r \\
+  &\equiv \ \sim (\sim(\sim p \ \wedge \sim q) \ \wedge \sim (p \ \wedge \sim r) \ \wedge \sim (q \ \wedge \sim r) \ \wedge \sim r) \\
+\end{align*}
 \end{document}
