@@ -22,7 +22,7 @@ A statement composed of multiple propositions can be under-simplified. The expre
 $$((\sim p \wedge q)\vee(\sim p \wedge \sim q))\vee(\sim p \wedge q)\equiv \sim p$$
 If the *wrong* sequence of logical equivalences were used to simplify the left-handed expression, it would yield the result $\sim p \wedge q$ (I believe, however the technicality doesn't matter here). Notice that the extraneous $q$ can not be removed. 
 
-Again, following the *wrong* sequence of logical equivalences can result in an under-simplified expression
+Again, following the *wrong* sequence of logical equivalences can result in an under-simplified expression. Be cautious.
 ## Section 2.2
 ### Definitions and Formulas
 

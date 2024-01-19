@@ -4,58 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "6d0abf5cafd9eaf0",
+        "id": "13993a00e5e521e5",
         "type": "split",
         "children": [
           {
-            "id": "4c366a5ffcca19f4",
+            "id": "cfbdb668b88230ea",
             "type": "tabs",
-            "dimension": 49.94866529774127,
             "children": [
               {
-                "id": "b81943d20cdc774f",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf"
-                  }
-                }
-              },
-              {
-                "id": "50740a8010b3d0d4",
+                "id": "71881a3f8e1ba52c",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "e4db1cad42037442",
-            "type": "tabs",
-            "dimension": 50.05133470225873,
-            "children": [
-              {
-                "id": "e40589712336163d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Courses/Discrete Mathematics/Week 1/Notes.md",
+                    "file": "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "73e095420785797f",
+                "id": "07706cb605406846",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -66,6 +35,47 @@
               }
             ],
             "currentTab": 1
+          },
+          {
+            "id": "1150e3d1f306864c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "79665b44c9ca9256",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "a788f64745516057",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "ff5867fce452fc6e",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "horizontal"
@@ -118,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5086555480957
+    "width": 265.5086555480957
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -134,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
+                "file": "Documents/Textbooks/all.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
+                "file": "Documents/Textbooks/all.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md"
+                "file": "Documents/Textbooks/all.pdf"
               }
             }
           }
@@ -195,17 +205,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50740a8010b3d0d4",
+  "active": "07706cb605406846",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 1/Homework/LaTeX/NH Assignment 1 Part 2.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 1/Homework/LaTeX/NH Assignment 1 Part 2.aux",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
     "Documents/Textbooks/all.pdf",
-    "Courses/Discrete Mathematics/Week 1/Notes.md",
-    "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
-    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
-    "Courses/Discrete Mathematics/Week 1/Homework/LaTeX/NH Assigment 1 Part 1.synctex(busy)",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Index.md",
-    "Courses/Discrete Mathematics/General Information.md"
+    "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+    "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
+    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
+    "Courses/Discrete Mathematics/Week 2/Assets/Universal Conditions Necessary, Sufficient, and Only If Definition.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Contrapositive, Converse, and Inverse Statements Definition.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Negation of a Universal Conditional Statement.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Negation of an Existential Statement Theorem.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Negation of Universal Statement Theorem.png",
+    "Courses/Discrete Mathematics/Week 2/Homework/Assignment 2, Part 1 The Logic of Quantified Statements.pdf",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.synctex.gz",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.pdf",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.aux",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.log",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.tex",
+    "Courses/Discrete Mathematics/Week 2/Assets/Predicate and Domain Definition.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Notation.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Existential Statement Definition.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Universal Statement & Counter Example Definition.png",
+    "Courses/Discrete Mathematics/Week 2/Assets/Truth Set Definition.png",
+    "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
+    "Courses/Discrete Mathematics/General Information.md",
+    "Courses/Discrete Mathematics/Index.md"
   ]
 }
