@@ -17,7 +17,7 @@
 ![[Universal Statement & Counter Example Definition.png]]
 - A **Universal Statement** is essentially the **predicate** where the variable is a value of some set $D$.
 	- The statement is true if $D$ is some subset of the **truth set**. 
-	- The statement is false ff $D$ contains a value for $x$ not in the truth set
+	- The statement is false if $D$ contains a value for $x$ not in the truth set
 		- The corresponding $x$ value is called a **counterexample**.
 
 ![[Notation.png]]
@@ -30,7 +30,7 @@ $$P(x) \Leftrightarrow Q(x) = \forall x\text{, }P(x) \leftrightarrow Q(x)$$
 	- The statement is true if *any value* in $D$ is within the **truth set**. 
 	- The statement is false if there's *no value* $D$ that is part of the truth set
 - $\exists$ : for any, exists.
-### Section 3.2
+## Section 3.2
 
 ### Definitions and Formulas
 
@@ -56,3 +56,5 @@ is called **vacuously true** or **true by default** if, and only if, $P(X)$ is f
 - $\forall x \in D \text{, if }P(X)\text{ then }Q(x) \not\equiv \forall x \in D \text{, if } \sim Q(x) \text{ then }\sim P(x)$
 
 ![[Universal Conditions Necessary, Sufficient, and Only If Definition.png]]
+
+

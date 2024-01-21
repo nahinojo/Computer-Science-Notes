@@ -32,16 +32,27 @@
                     "file": "Documents/Textbooks/all.pdf"
                   }
                 }
+              },
+              {
+                "id": "6c2769034dce24e6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "1150e3d1f306864c",
             "type": "tabs",
             "children": [
               {
-                "id": "79665b44c9ca9256",
+                "id": "b69e114245168fd0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -128,7 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5086555480957
+    "width": 349.5086555480957
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -144,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/Textbooks/all.pdf",
+                "file": "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/Textbooks/all.pdf",
+                "file": "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/Textbooks/all.pdf"
+                "file": "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md"
               }
             }
           }
@@ -205,14 +216,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07706cb605406846",
+  "active": "71881a3f8e1ba52c",
   "lastOpenFiles": [
     "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
-    "Documents/Textbooks/all.pdf",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 2.tex",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+    "Courses/Discrete Mathematics/Week 2/Homework/Assignment 2, Part 2 Sequences and Summations.pdf",
+    "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
+    "Documents/Textbooks/all.pdf",
+    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.aux",
+    "Courses/Discrete Mathematics/Week 2/Assets/Notation.png",
     "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
     "Courses/Discrete Mathematics/Week 2/Assets/Universal Conditions Necessary, Sufficient, and Only If Definition.png",
     "Courses/Discrete Mathematics/Week 2/Assets/Contrapositive, Converse, and Inverse Statements Definition.png",
@@ -222,11 +237,8 @@
     "Courses/Discrete Mathematics/Week 2/Homework/Assignment 2, Part 1 The Logic of Quantified Statements.pdf",
     "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.synctex.gz",
     "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.pdf",
-    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.aux",
     "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.log",
-    "Courses/Discrete Mathematics/Week 2/Submission/NH Assignment 2 Part 1.tex",
     "Courses/Discrete Mathematics/Week 2/Assets/Predicate and Domain Definition.png",
-    "Courses/Discrete Mathematics/Week 2/Assets/Notation.png",
     "Courses/Discrete Mathematics/Week 2/Assets/Existential Statement Definition.png",
     "Courses/Discrete Mathematics/Week 2/Assets/Universal Statement & Counter Example Definition.png",
     "Courses/Discrete Mathematics/Week 2/Assets/Truth Set Definition.png",
