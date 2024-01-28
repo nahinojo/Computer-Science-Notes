@@ -58,3 +58,41 @@ is called **vacuously true** or **true by default** if, and only if, $P(X)$ is f
 ![[Universal Conditions Necessary, Sufficient, and Only If Definition.png]]
 
 
+
+
+## PDF: Chapter 5
+
+![[Discrete Mathematics with Applications.pdf#page=281]]
+## Section 5.1
+
+### Definitions and Formulas
+
+#### Sequences
+
+![[Sequence Definition.png]]
+- Denoted as $a_m, a_{m+1}, a_{m+2},...,a_n$
+- **Term**: Each individual element $a_k$
+	- **Subscript/Index**: $k$
+- $m$ is typically the subscript of the initial term, $n$ is the typically the subscript of the final term.
+- $a_m, a_{m+1}, a_{m+2},...$ denotes an **infinite sequence**.
+- An **explicit formula** or **general formula** for a sequence is a rule that shows how the values of $a_k$ depends on $k$.
+
+**Sequence Formula Example**:
+
+$a_k = \frac{k}{k+1}$ for every integer $k \geq 1$
+
+#### Product and Summation Series
+
+![[Summation Formula.png]]
+![[Product Formula.png]]
+#### Theorems and Formulae
+
+![[Summation and Product Theorems.png]]
+![[Exponent Summation Formula.png]]
+![[Geometric Formulae.png]]
+
+#### Combinatorics
+
+![[Factorial Definition.png]]
+![[Choose Definition.png]]
+![[Choose Formula.png]]
