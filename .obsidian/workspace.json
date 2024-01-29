@@ -4,16 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ec9cca208e29ba99",
+        "id": "80dad3f7cfe2d6cf",
         "type": "split",
         "children": [
           {
             "id": "cfbdb668b88230ea",
             "type": "tabs",
-            "dimension": 38.29568788501027,
             "children": [
               {
-                "id": "07706cb605406846",
+                "id": "37acd60f43c4c586",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -28,27 +27,49 @@
                 "id": "fdb615a8c2cc42b4",
                 "type": "leaf",
                 "state": {
-                  "type": "pdf",
+                  "type": "markdown",
                   "state": {
-                    "file": "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf"
+                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                    "mode": "source",
+                    "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
-            "id": "206ad2f1f88a03cb",
+            "id": "4e55a8f4270079f3",
             "type": "tabs",
-            "dimension": 61.70431211498973,
             "children": [
               {
-                "id": "1aebb87c53745424",
+                "id": "ad6dac498926e03d",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                  }
+                }
+              },
+              {
+                "id": "428b225c55c613ec",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Documents/Textbooks/all.pdf"
+                  }
+                }
+              },
+              {
+                "id": "ae889fe607d97703",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                    "mode": "source",
+                    "source": false
                   }
                 }
               }
@@ -105,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5086555480957,
-    "collapsed": true
+    "width": 298.5086555480957
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -122,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
+                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
+                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf"
+                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md"
               }
             }
           }
@@ -189,15 +209,15 @@
     "type": "floating",
     "children": [
       {
-        "id": "69d2274a3bfe4eb1",
+        "id": "c2275db68fef1941",
         "type": "window",
         "children": [
           {
-            "id": "4a1f5bf723a44abe",
+            "id": "3cc102d353a1255b",
             "type": "tabs",
             "children": [
               {
-                "id": "fb7c9dae8d431c98",
+                "id": "1585f5a395afafb2",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -205,37 +225,51 @@
                     "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
                   }
                 }
+              },
+              {
+                "id": "8fe43807e264d2cc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
-        "x": 1440,
-        "y": 654,
-        "width": 2560,
-        "height": 696,
-        "maximize": true,
+        "x": 5722,
+        "y": 1603,
+        "width": 1024,
+        "height": 359,
+        "maximize": false,
         "zoom": 1.5
       }
     ]
   },
-  "active": "fdb615a8c2cc42b4",
+  "active": "37acd60f43c4c586",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.aux",
-    "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
-    "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
+    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 2 Indirect Proof Methods.pdf",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.synctex(busy)",
+    "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+    "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Documents/Textbooks/all.pdf",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.aux",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.synctex.gz",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.pdf",
+    "Courses/Discrete Mathematics/Week 3/Assets/literally what.png",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.log",
+    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.tex",
+    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
     "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 1/Assets/Tautology and Contradiction Definition.png",
-    "Courses/Discrete Mathematics/Week 1/Homework/Assignment 1, Part 2 The Logic of Conditional Statements.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.synctex.gz",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.log",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 1.tex",
     "Courses/Discrete Mathematics/Week 3/Assets/Direct Proof Example.png",
     "Courses/Discrete Mathematics/Week 3/Assets/Existential Instantiation.png",
     "Courses/Discrete Mathematics/Week 3/Assets/Direct Proof Method.png",
@@ -245,7 +279,6 @@
     "Courses/Discrete Mathematics/Week 3/Assets/Integer Even Odd Definition.png",
     "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 2/Assets/Geometric Formulae.png",
-    "Courses/Discrete Mathematics/Week 2/Assets/Exponent Summation Theorem.png",
     "Courses/Discrete Mathematics/General Information.md",
     "Courses/Discrete Mathematics/Index.md"
   ]
