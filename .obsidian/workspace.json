@@ -11,11 +11,19 @@
             "id": "ad6dac498926e03d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
-                "mode": "source",
-                "source": false
+                "file": "Documents/Textbooks/all.pdf"
+              }
+            }
+          },
+          {
+            "id": "55e58b2f5eb21208",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf"
               }
             }
           }
@@ -69,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5086555480957,
-    "collapsed": true
+    "width": 268.5086555480957
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -86,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+                "file": "Documents/Textbooks/all.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+                "file": "Documents/Textbooks/all.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                "file": "Documents/Textbooks/all.pdf"
               }
             }
           }
@@ -174,8 +181,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 1408,
-        "y": 889,
+        "x": 5565,
+        "y": 787,
         "width": 1024,
         "height": 800,
         "maximize": true,
@@ -241,18 +248,19 @@
       }
     ]
   },
-  "active": "148dcda387e8bbf5",
+  "active": "ad6dac498926e03d",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
-    "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex(busy)",
+    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
+    "Documents/Textbooks/all.pdf",
+    "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
     "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.aux",
+    "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
+    "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex.gz",
     "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.pdf",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
     "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-    "Documents/Textbooks/all.pdf",
     "Courses/Discrete Mathematics/Temporary/Template.synctex(busy)",
     "Courses/Discrete Mathematics/Week 1/Submission/NH Assigment 1 Part 1.pdf",
     "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
