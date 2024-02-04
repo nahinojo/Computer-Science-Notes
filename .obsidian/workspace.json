@@ -4,79 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "80dad3f7cfe2d6cf",
-        "type": "split",
+        "id": "4e55a8f4270079f3",
+        "type": "tabs",
         "children": [
           {
-            "id": "cfbdb668b88230ea",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "37acd60f43c4c586",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "fdb615a8c2cc42b4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "ad6dac498926e03d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "4e55a8f4270079f3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ad6dac498926e03d",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-                  }
-                }
-              },
-              {
-                "id": "428b225c55c613ec",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/all.pdf"
-                  }
-                }
-              },
-              {
-                "id": "ae889fe607d97703",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5086555480957
+    "width": 268.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -142,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md"
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
               }
             }
           }
@@ -205,19 +149,19 @@
     }
   },
   "floating": {
-    "id": "a1e25933ba995123",
+    "id": "c8f02c2dee41bae9",
     "type": "floating",
     "children": [
       {
-        "id": "c2275db68fef1941",
+        "id": "080ba6066a187ea5",
         "type": "window",
         "children": [
           {
-            "id": "3cc102d353a1255b",
+            "id": "b971c51a85341702",
             "type": "tabs",
             "children": [
               {
-                "id": "1585f5a395afafb2",
+                "id": "c085e16e012299b8",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -225,49 +169,95 @@
                     "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
                   }
                 }
-              },
-              {
-                "id": "8fe43807e264d2cc",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical",
-        "x": 5722,
-        "y": 1603,
+        "x": 1408,
+        "y": 889,
         "width": 1024,
-        "height": 359,
+        "height": 800,
+        "maximize": true,
+        "zoom": 1.5
+      },
+      {
+        "id": "d02891f35247d644",
+        "type": "window",
+        "children": [
+          {
+            "id": "19c091436ca5dd29",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "645aea0756701df4",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 3840,
+        "y": 1377,
+        "width": 1440,
+        "height": 1183,
+        "maximize": false,
+        "zoom": 1.5
+      },
+      {
+        "id": "427bc232f3a8aa49",
+        "type": "window",
+        "children": [
+          {
+            "id": "ef95eeabf167a934",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "148dcda387e8bbf5",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 3840,
+        "y": 0,
+        "width": 1440,
+        "height": 1377,
         "maximize": false,
         "zoom": 1.5
       }
     ]
   },
-  "active": "37acd60f43c4c586",
+  "active": "148dcda387e8bbf5",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
-    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 2 Indirect Proof Methods.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+    "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.aux",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex.gz",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.pdf",
+    "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
     "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Documents/Textbooks/all.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.aux",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.synctex.gz",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.pdf",
-    "Courses/Discrete Mathematics/Week 3/Assets/literally what.png",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.log",
-    "Courses/Discrete Mathematics/Week 3/Homework/Submission/NH Assignment 3 Part 2.tex",
+    "Courses/Discrete Mathematics/Temporary/Template.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 1/Submission/NH Assigment 1 Part 1.pdf",
     "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
-    "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
+    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 2 Indirect Proof Methods.pdf",
+    "Courses/Discrete Mathematics/Week 3/Assets/literally what.png",
     "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 1/Assets/Tautology and Contradiction Definition.png",
     "Courses/Discrete Mathematics/Week 3/Assets/Direct Proof Example.png",

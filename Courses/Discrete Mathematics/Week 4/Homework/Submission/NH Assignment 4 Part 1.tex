@@ -1,0 +1,195 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage{pifont}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+    \\ \\
+}
+
+\newcommand{\xsupposition}[1]{
+    \underline{Suppositions}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xgoal}[1]{
+    \underline{Goal}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xdeductions}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}[1]{
+    \underline{Conclusion}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Homework 4, Part 1
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+
+
+\section*{Exercise Set 6.1}
+
+
+\subsection*{7-a}
+\xsupposition{(None)}
+\xgoal{Prove $A \not\subseteq B$.}
+\xdeductions
+$4 \in A$
+\xlist{
+    \item Let $x \in A$.
+    \item By definition of A, $x \in \mathbb{Z} | x = 6a + 4$.
+    \item Then for $a = 0$, $x = 6(0) + 4 = 4$.
+    \item Hence $4 \in A$. 
+}
+$4 \notin B$.
+\xlist{
+    \item By defintion of B, if $4 \in B$ then $18b -2 = 4$ for some integer $b$.
+    \item By algebra, $4 = 18b - 2 \Rightarrow b = \frac{1}{3}$. 
+    \item Yet $b$ cannot equal $\frac{1}{3}$ because $b$ is an integer.
+    \item Therefore, $4 \notin B$.
+}
+Since $4 \in A$ and $4 \notin B$, $A \not\subseteq B$.
+\\ \\
+\xconclusion{$A \not\subseteq B$.}
+
+
+\subsection*{7-b}
+\xsupposition{Let $t$ be a particular but arbitrarily chosen element of $B$.}
+\xgoal{Prove $B \subseteq A$.}
+\xdeductions
+$t \in \mathbb{Z} | t = 18b - 2$ for some integer $b$.
+\xlist{
+    \item By supposition, $t \in B$.
+    \item Then by defintion of $B$, $t \in \mathbb{Z} | t = 18b - 2$ for some integer $b$.
+}
+$t \in A$.
+\xlist{
+    \item Let $a = 3b - 1$.
+    \item By closure, $a$ is an integer because it is the product and summation of integers.
+    \item By definition of $A$, $6a + 4 \in A$
+    \item By algebra, $t = 6a + 4$:
+    \begin{align*}
+        6a + 4 &= 6(3b - 1) + 4 \\
+        &= 18b - 6 + 4 \\
+        &= 18b - 2 \\
+        &= t
+    \end{align*}
+    \item By equality, $t \in A$ because $6a + 4 \in A$.
+    \item Hence $t \in A$.
+}
+By definition of subset, $B \subseteq A$ because $t \in A \rightarrow t \in B$.
+\\ \\
+\xconclusion{Therefore, $B \subseteq A$.}
+\subsection*{7-c}
+By definition of set equality, $B = C$ if and only if $B \subseteq C$ and $C \subseteq B$.
+\\ \\
+\textbf{Proof}: $B \subseteq C$
+\\ \\
+\xsupposition {Let $t$ be a particular but arbitrarily chosen element of $B$.}
+\xgoal{Prove $B \subseteq C$.}
+\xdeductions
+$t \in \mathbb{Z} | t = 18b - 2$ for some integer $b$ (See problem 7-b for proof).
+\\ \\
+$t \in C$.
+\xlist{
+    \item Let $c = b-1$.
+    \item By closure, $c$ is an integer because it is the product and summation of integers.
+    \item By definition of $C$, $18c + 16 \in C$
+    \item By algebra, $t = 18c + 16$:
+    \begin{align*}
+        18c + 16 &= 18(b-1) + 16) \\
+        &= 18b - 18 + 16 \\
+        &= 18b - 2 \\
+        &= t
+    \end{align*}
+    \item By equality, $t \in C$ because $18c + 16 \in C$.
+    \item Hence $t \in C$.
+}
+By definition of subset, $B \subseteq C$ because $t \in B \rightarrow t \in C$.
+\\ \\
+\xconclusion{Therefore, $B \subseteq C$.}
+\\ \\
+Seeing that this first proof is complete, do not carry any established variables into the next proof. 
+Looking ahead, the only known variable definitions should be that of $B$ and $C$, and their respective formulas, from the initial prompt.
+\\ \\
+\textbf{Proof}: $C \subseteq B$
+\\ \\
+\xsupposition {Let $t$ be a particular but arbitrarily chosen element of $C$.}
+\xgoal{Prove $t \in B$.}
+\xdeductions
+$t \in \mathbb{Z} | t = 18c + 16$ for some integer $c$.
+\xlist{
+    \item By supposition, $t \in C$.
+    \item Then by defintion of $C$, $t \in \mathbb{Z} | t = 18c + 16$ for some integer $c$.
+}
+\\ \\
+$t \in B$.
+\xlist{
+    \item Let $b = c+1$.
+    \item By closure, $b$ is an integer because it is the product and summation of integers.
+    \item By definition of $B$, $18b - 2 \in B$ .
+    \item By algebra, $t = 18b - 2$ :
+    \begin{align*}
+        18b - 2 &= 18(c+1) - 2 \\
+        &= 18c + 18 - 2 \\
+        &= 18c + 16 \\
+        &= t
+    \end{align*}
+    \item By equality, $t \in B$ because $18b - 2 \in B$.
+    \item Hence $t \in B$.
+}
+By definition of subset, $C \subseteq B$ because $t \in C \rightarrow t \in B$.
+\\ \\
+\xconclusion{Therefore, $C \subseteq B$.}
+\\ \\
+By definition of set equality, $B = C$ because $B \subseteq C$ and $C \subseteq B$.
+\subsection*{26 - a}
+\begin{align*}
+    \bigcup_{i=1}^{4} R_i &= \bigcup_{i=1}^{4} \left[1, 1 + \frac{1}{i}\right] \\
+    &= \left[1, 1 + \frac{1}{1}\right]\cup \left[1, 1 + \frac{1}{2}\right]\cup \left[1, 1 + \frac{1}{3}\right]\cup \left[1, 1 + \frac{1}{4}\right] \\
+    &= \left[1, 2\right] \cup \left[1, \frac{3}{2}\right] \cup \left[1, \frac{4}{3}\right] \cup \left[1, \frac{5}{4}\right] \\
+    &= \left[1, 2\right]
+\end{align*}
+\subsection*{26 - b}
+\begin{align*}
+    \bigcap_{i=1}^{4} R_i &= \bigcap_{i=1}^{4} \left[1, 1 + \frac{1}{i}\right] \\
+    &= \left[1, 1 + \frac{1}{1}\right]\cap \left[1, 1 + \frac{1}{2}\right]\cap \left[1, 1 + \frac{1}{3}\right]\cap \left[1, 1 + \frac{1}{4}\right] \\
+    &= \left[1, 2\right] \cap \left[1, \frac{3}{2}\right] \cap \left[1, \frac{4}{3}\right] \cap \left[1, \frac{5}{4}\right] \\
+    &= \left[1, \frac{5}{4}\right]
+\end{align*}
+\subsection*{26 - c}
+No, the sets $R_1, R_2, R_3,$... are not mutually disjoint. 
+This is because all sets share the element, 1. In fact, for $i \neq j$, no set $R_i$ is mutually disjoint from $R_j$. 
+
+\subsection*{29}
+\end{document}

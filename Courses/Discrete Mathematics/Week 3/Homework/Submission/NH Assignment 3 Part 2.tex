@@ -11,7 +11,7 @@
 
 \title{
   \textbf{CS-225: Discrete Structures in CS} \\
-  Homework 3, Part 1
+  Homework 3, Part 2
   }
 \author{Noah Hinojos}
 \date{\today}
@@ -24,8 +24,8 @@
 \section*{Exercise Set 4.7}
 \subsection*{18}
 \underline{Suppositions}:
-Suppose not. Let $a$ be a rational number, $b$ be a non-zero rational number, and $r$ be an irrational number.
-If this is so, then $a+br$ must be an rational number.
+Suppose not. Let $a$ be a rational number, $b$ be a non-zero rational number,
+$r$ be an irrational number, and $a+br$ be an rational number.
 \\ \\
 \underline{Goal}:
 \\ \\
@@ -35,11 +35,12 @@ We must arrive at a contradiction.
 \\ \\
 $r= \frac{fgd - fch}{edh}$ where $c$ and $g$ are integers; and $d$, $e$, $f$, and $h$ are non-zero integers.:
 \begin{itemize}
-  \item [$\centerdot$] By definition of rational, $a = \frac{c}{d}$ where $c,d$ are integers and $d \neq 0$. 
-  \item [$\centerdot$] By definition of rational, $b = \frac{e}{f}$ where $e,f$ are integers and $f \neq 0$.
-  \item [$\centerdot$] Through algebra, $b \neq 0 \Rightarrow \frac{e}{f} \neq 0 \Rightarrow e \neq 0$ 
+  \item [$\centerdot$] By definition of rational, $a = \frac{c}{d}$ where $c$ and $d$ are integers and $d$ is non-zero. 
+  \item [$\centerdot$] By definition of rational, $b = \frac{e}{f}$ where $e$ and $f$ are integers and $f$ is non-zero.
+  \item [$\centerdot$] By eqaulity, $\frac{e}{f}$ is non-zero because $b$ is non-zero.
+  \item [$\centerdot$] By algebra, $e$ is non-zero because $\frac{e}{f}$ is non-zero.
   \item [$\centerdot$] By definition of rational, $a+br = \frac{g}{h}$ where $g,h$ are integers and $h \neq 0$.
-  \item [$\centerdot$] By substitution, $r$ can be represented as follows:
+  \item [$\centerdot$] By substitution and algebra, $r$ can be represented as follows:
   \begin{align*}
     a+br &= \frac{g}{h} \\
     \left(\frac{c}{d}\right) + \left(\frac{e}{f}\right)r &= \frac{g}{h}\\
@@ -110,7 +111,7 @@ Therefore, it must be true that if $a$ and $b$ are rational numbers, $b\neq0$, a
 \subsection*{27}
 \underline{Suppositions}:
 \\ \\
-Suppose not. Let's assume there exists positive real numbers $r$ and $s$ and $\sqrt{r+s} = \sqrt{r} + \sqrt{s}$
+Suppose not. Let's assume $r$ and $s$ are some positive real numbers and $\sqrt{r+s} = \sqrt{r} + \sqrt{s}$
 \\ \\
 \underline{Goal}:
 \\ \\
@@ -121,28 +122,26 @@ Arrive at contradiction.
 For any positive real number $a$, $\sqrt{a}$ is a non-zero real number:
 \begin{itemize}
   \item [$\centerdot$] Let $\sqrt{a} = b$
-  \item [$\centerdot$] $\sqrt{a} = b \Rightarrow b^2 = a$
+  \item [$\centerdot$] By algebra, $\sqrt{a} = b \Rightarrow b^2 = a$
   \item [$\centerdot$] By equality, $b^2$ is a positive real number because $a$ is a positive real number.
   \item [$\centerdot$] By zero product property, $b$ is a non zero real number because $b^2$ is a non-zero real number.
   \item [$\centerdot$] By equality, $\sqrt{a}$ is a non-zero real number because $b$ is a non-zero real number.
+  \item [$\centerdot$] Hence, $\sqrt{a}$ is a non-zero real number.
 \end{itemize}
 \newblock
 \\ \\
 The product of any three non-zero real numbers is a non-zero real number:
 \begin{itemize}
   \item [$\centerdot$] Let $x$, $y$, and $z$ be non-zero real numbers.
-  \item [$\centerdot$] Then their product is $xyz$.
-  \item [$\centerdot$] Let $w = xy$.
-  \item [$\centerdot$] Due to zero product property, $w$ is a non-zero real number.
-  \item [$\centerdot$] Let $v = xyz$.
-  \item [$\centerdot$] $v = xyz = wz$.
+  \item [$\centerdot$] Then the
+  \\ \\ = wz$.
   \item [$\centerdot$] Due to zero product property, $v$ is a non-zero real number.
-  \item [$\centerdot$] Since $xyz = v$, $xyz$ is also a non-zero real number.
+  \item [$\centerdot$] By equality, $xyz$ is also a non-zero real number because $v$ is a non-zero real number.
   \item [$\centerdot$] Hence, the product of three non-zero real numbers $xyz$ is a non-zero real number.
 \end{itemize}
 \newblock
 \\ \\
-$\sqrt{r+s} = \sqrt{r} + \sqrt{s} \Rightarrow 0 = 2\sqrt{r}\sqrt{s}$.
+Through algebra, $\sqrt{r+s} = \sqrt{r} + \sqrt{s} \Rightarrow 0 = 2\sqrt{r}\sqrt{s}$:
 \begin{align*}
   \sqrt{r+s} &= \sqrt{r} + \sqrt{s} \\
   r+s &= (\sqrt{r} + \sqrt{s})^2 \\
@@ -168,11 +167,43 @@ However, $2\sqrt{r}\sqrt{s} \neq 0$ because $r$ and $s$ are positive real intege
 \underline{Conclusion}:
 \\ \\
 Therefore, for all positive real numbers $r$ and $s$, $\sqrt{r+s} \neq \sqrt{r} + \sqrt{s}$ must be true.
+\subsection*{28}
+\underline{Suppositions}:
+\\ \\
+Suppose not. Assume $a|b$, $a \nmid c$, and $a |(b+c)$.
+\\ \\
+\underline{Goal}:
+\\ \\
+Arrive at a contradiction.
+\\ \\
+\underline{Deductions}:
+\\ \\
+$a|c$ must be true.
+\begin{itemize}
+  \item [$\centerdot$] $a|b$ implies $b = ap$ where $b$ and $p$ are integers and $a$ is a non-zero integer.
+  \item [$\centerdot$] By zero product property, $a$ and $p$ are non-zero because $b$ is non-zero.
+  \item [$\centerdot$] $a|(b+c)$ implies $b+c = aq$ where $q$ is some integer.
+  \item [$\centerdot$] By algebra, $c = aq -b$
+  \item [$\centerdot$] By substitution, $c = aq - ap$
+  \item [$\centerdot$] By algebra, $c = a(q-p)$
+  \item [$\centerdot$] Let $q-p = r$
+  \item [$\centerdot$] By closure, $r$ is an integer because it is the difference of two integers.
+  \item [$\centerdot$] $c = a(q-p) = ar$
+  \item [$\centerdot$] By closure, $c$ is an integer because it is the product of two integers.
+  \item [$\centerdot$] By defintion of divisibility, $a|c$ because $c$ is an integer and $a$ is a non-zero integer.
+\end{itemize}
+\newblock
+\\ \\
+It was therefore shown that $a | c$. This contradicts the supposition that $a \nmid c$.
+\\ \\
+\underline{Conclusion}:
+\\ \\
+For all integers $a$, $b$, $c$, if $a|b$ and $a \nmid c$, then $a \nmid (b+c)$.
 \section*{4.8}
 \subsection*{18 - a}
 \underline{Suppositions}:
 \\ \\
-Suppose $a$ is not even, hence it is odd.
+Suppose $a$ is an odd integer.
 \\ \\
 \underline{Goal}:
 \\ \\
@@ -182,8 +213,8 @@ Prove $a^3$ is odd.
 \\ \\
 The product of two odd integers is odd:
 \begin{itemize}
-  \item [$\centerdot$] Let the product of two odd integers be $xy$ where $x$ and $y$ are odd integers.
-  \item [$\centerdot$] By definition of odd, $x=2s+1$ and $y=2t+1$ where $s$ and $t$ are some integers.
+  \item [$\centerdot$] Let the product of two odd integers be $xy$, where $x$ and $y$ are odd integers.
+  \item [$\centerdot$] By definition of odd, $x=2s+1$ and $y=2t+1$ where $s$ and $t$ are integers.
   \item [$\centerdot$] By algebra, $xy$ can be rewritten:
   \begin{align*}
     xy &= (2s+1)(2t+1) \\
@@ -193,15 +224,15 @@ The product of two odd integers is odd:
   \item [$\centerdot$] Let $n = st$.
   \item [$\centerdot$] By closure, $n$ is an integer because it is the product of two integers.
   \item [$\centerdot$] Let $w = 2st$.
-  \item [$\centerdot$] $w = 2st = 2n$.
+  \item [$\centerdot$] By algebra, $w = 2st = 2n$.
   \item [$\centerdot$] By closure, $w$ is an integer because it is the product of two integers.
   \item [$\centerdot$] Let $z = s + t$.
   \item [$\centerdot$] By closure, $z$ is an integer because it is the sum of two integers.
   \item [$\centerdot$] Let $v = st+s+t$.
-  \item [$\centerdot$] $v = st+s+t= w+z$.
+  \item [$\centerdot$] By algebra, $v = st+s+t= w+z$.
   \item [$\centerdot$] By closure, $v$ is an integer because it is the sum of two integers.
   \item [$\centerdot$] Let $t=xy$.
-  \item [$\centerdot$] $t = xy = 2(st+s+t)+1 = 2v + 1$.
+  \item [$\centerdot$] By algebra and substitution, $t = xy = 2(st+s+t)+1 = 2v + 1$.
   \item [$\centerdot$] By defintion of odd, $t$ is an odd integer.
   \item [$\centerdot$] By equality, $xy$ is an odd integer since $t$ is an odd integer.
   \item [$\centerdot$] Therefore, the product of two odd integers is an odd integer.
@@ -212,17 +243,16 @@ $a^3$ is an odd integer:
   \item [$\centerdot$] Since $b$ is the product of two odd integers, $b$ is an odd integer, as shown before.
   \item [$\centerdot$] Let $c = ab$.
   \item [$\centerdot$] Since $c$ is the product of two odd integers, $c$ is an odd integer, as shown before.
-  \item [$\centerdot$] $c = ab = a(a^2) = a^3$
+  \item [$\centerdot$] By algebra, $c = ab = a(a^2) = a^3$
   \item [$\centerdot$] By equality, $a^3$ is an odd integer because $c$ is an odd integer.
 \end{itemize}
 \newblock
 \\ \\
-Thus, $a^3$ was shown to be an odd integer because $a$ is an odd integer.
+Thus, if $a$ is an odd integer then $a^3$ is an odd integer.
 \\ \\
 \underline{Conclusion}:
 \\ \\
 For every integer $a$, if $a^3$ is even then $a$ is even.
-\\ \\
 \subsection*{18 - b}
 \underline{Suppositions}:
 \\ \\
@@ -234,12 +264,10 @@ Arrive at a contradiction.
 \\ \\
 \underline{Deductions}:
 \\ \\
-$p$ is not rational:
+$p$ is irrational:
 \begin{itemize}
-  \item [$\centerdot$] This will be proven by proof of contradiction.
-  \item [$\centerdot$] Suppose $p$ is rational. If this is contradictory, then $p$ must be irrational.
   \item [$\centerdot$] By definition of rational, $p = \frac{a}{b}$ where $a$ is an integer and $b$ is a non-zero integer.
-  \item [$\centerdot$] This implies $a$ and $b$ also have no common factors.
+  \item [$\centerdot$] This also implies $a$ and $b$ also have no common factors.
   \item [$\centerdot$] By algebra,
   \begin{align*}
     p =\sqrt[3]{2} &=\frac{a}{b} \\
@@ -250,29 +278,31 @@ $p$ is not rational:
   \item [$\centerdot$] Let $n = b^3$. 
   \item [$\centerdot$] $n$ is an integer because it is the product of three integers (See Exercise Set 4.7 \#18  above).
   \item [$\centerdot$] Let $m = 2b^3$.
-  \item [$\centerdot$] $m = 2b^3 = 2n$.
+  \item [$\centerdot$] By algebra, $m = 2b^3 = 2n$.
   \item [$\centerdot$] By definition of even, $m$ is an even integer.
-  \item [$\centerdot$] $a^3 = 2b^3 = m$.
+  \item [$\centerdot$] By algebra, $a^3 = 2b^3 = m$.
   \item [$\centerdot$] By definition of even, $a^3$ is an even integer. Therefore, $a$ must also be even.
   \item [$\centerdot$] Then $a = 2n$ where $n$ is an integer.
-  \item [$\centerdot$] $2b^3 = a^3 = (2n)^3 = 2\cdot2^2\cdot n^3 = 2(4n^3)$ 
+  \item [$\centerdot$] By algebra, $2b^3 = a^3 = (2n)^3 = 2\cdot2^2\cdot n^3 = 2(4n^3)$ 
   \item [$\centerdot$] Let $o = n^3$.
   \item [$\centerdot$] $o$ is an integer because it is the product of three integers (See Exercise Set 4.7 \#18  above).
   \item [$\centerdot$] Let $k = 2n^3$.
-  \item [$\centerdot$] $k = 2n^3 = 2o$.
+  \item [$\centerdot$] By algebra, $k = 2n^3 = 2o$.
   \item [$\centerdot$] By definition of even, $k$ is an even integer.
   \item [$\centerdot$] Let $j = 4n^3$.
-  \item [$\centerdot$] $j = 4n^3 = 2k$.
+  \item [$\centerdot$] By algebra, $j = 4n^3 = 2k$.
   \item [$\centerdot$] By definition of even, $j$ is an even integer.
-  \item [$\centerdot$] $2b^3 = 2(4n^3) = 2j$ 
-  \item [$\centerdot$] $b^3 = j$
+  \item [$\centerdot$] By algebra, $2b^3 = 2(4n^3) = 2j$ 
+  \item [$\centerdot$] By algebra, $b^3 = j$
   \item [$\centerdot$] By definition of even, $b^3$ is an even integer. Therefore, $b$ must also be even.
   \item [$\centerdot$] Since $a$ and $b$ are even, they have a common factor of 2.
   \item [$\centerdot$] However, this contradicts the prior deduction that $a$ and $b$ must have no common factors.
-  \item [$\centerdot$] Therefore, the supposition $p$ is rational is contradictory.
   \item [$\centerdot$] Hence, $p$ must be irrational.
-
 \end{itemize}
+\newblock
+\\ \\
+Since $p$ is irrational, it contradicts the supposition that $p$ is rational.
+\\ \\
 \underline{Conclusion}:
 \\ \\
 $\sqrt[3]{2}$ is irrational.
