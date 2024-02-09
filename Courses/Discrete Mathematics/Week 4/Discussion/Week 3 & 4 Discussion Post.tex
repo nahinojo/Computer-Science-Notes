@@ -1,0 +1,256 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[mathscr]{euscript}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\usepackage{pifont}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+    \\ \\
+}
+
+\newcommand{\xsupposition}[1]{
+    \underline{Suppositions}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xgoal}[1]{
+    \underline{Goal}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xdeductions}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}[1]{
+    \underline{Conclusion}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Initial- Post Wk 3 \& 4 Problem Sets \#7 and \#11
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+
+\section*{7}
+\subsection*{Question}
+Prove the following statement (using either direct or indirect proof method): \\ \\
+For every real number $x$, if $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 \geq 0$, then $x \geq 0$.
+
+\subsection*{Answer}
+[PROOF BY CONTRAPOSITIVE] \\ \\
+\xsupposition{$x$ is a real number and $x < 0$.}
+\xgoal{Prove that $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 < 0$.}
+\xdeductions
+(i) $r^p > 0$ where $r$ is some non-zero real number and $p$ is some even integer.
+\xlist{
+  \item Let $r$ be some non-zero real number.
+  \item Let $p$ be an even integer.
+  \item Since $p$ is even, it can be represented as $p=2n$ where $n$ is some integer.
+  \item $r^p = r^{2n} = (r^n)^2$.
+  \item $(r^n)^2 > 0$ because the square of any non-zero number is positive.
+  \item By equality, $r^p > 0$ because $(r^n)^2 > 0$.
+  \item Hence, $r^p > 0$ where $r$ is some real number and $p$ is some even integer.
+}
+(ii) $s^q < 0$ where $s$ is some negative real number and $q$ is some odd integer.
+\xlist{
+    \item Let $s$ be some negative real number.
+    \item Let $q$ be some odd integer.
+    \item Since $q$ is odd, it can be represented as $q=2m + 1$ where $m$ is some integer.
+    \item $s^q = s^{2m + 1} = (s^m)^2$.
+    \item $(s^m)^2 > 0$ because the square of a non-zero real number is positive.
+    \item $s(s^m)^2 < 0$ because it is the product of some positive real number $(s^m)^2$ and some negative real number $s$.
+    \item By equality, $s^q < 0$ because $s(s^m)^2 < 0$.
+}
+(iii) $3x < 0$
+\xlist{
+  \item The product of a positive real number and a negative real number is a negative real number.
+}
+(iv) $-x^2 < 0$
+\xlist{
+  \item $x^2 > 0$ because the exponent is an even integer. See Deduction (i).
+  \item Then $-x^2 < 0$ because it is the opposite sign of a positive number.
+}
+(v) $3x^3 < 0$
+\xlist{
+  \item $x^3 < 0$ because the exponent is a negative integer. See Deduction (ii).
+  \item Then $3x^3 < 0$ because it is the product of a positive and negative number.
+  
+}
+(vi) $-4x^4 < 0$
+\xlist{
+  \item $x^4 > 0$ because the exponent is an even integer. See Deduction (i).
+  \item Then $-4x^4 < 0$ because it is the product of a positive and negative number.
+}
+(vii) $x^5 < 0$
+\xlist{
+  \item $x^5 < 0$ because the exponent is a negative integer. See Deduction (ii).
+}
+By Deductions (iii) through (vii), every individual expression in $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4$ is less than 0. 
+Then by closure, $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 < 0$. \\ \\
+\xconclusion{$x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 < 0$.}
+
+\section*{11}
+\subsection*{Question}
+
+a) Find $\bigcup_{i=1}^{4}A_i$ and $\bigcap_{i=1}^{4}A_i$ if for every positivie integer $i$.
+\begin{itemize}
+  \item [I.] $A_i = \{i, i+1, i+2, ...\}$. Are $A_1, A_2, A_3, A_4$ mutually disjoint? Justify your answer.
+  \item [II.] $A_i = \{0, i\}$. Are $A_1, A_2, A_3, A_4$ mutually disjoint? Justify your answer.
+  \item [III.] $A_i = (0,i)$, that is, the set of real numbers $x$ with $0<x<i$. Are $A_1, A_2, A_3, A_4$ mutually disjoint? Justify your answer.
+  \item [IV.] $A_i = (0,\infty)$, that is, the set of real numbers $x$ with $x>i$. Are $A_1, A_2, A_3, A_4$ mutually disjoint? Justify your answer.
+\end{itemize}
+\newblock
+\\ \\
+b) Let $R$, $S$, and $T$, be defined as follows:
+\begin{itemize}
+  \item [] $R = \{x \in Z | x \text{ is divisible by } 2\}$ \\
+  \item [] $S = \{x \in Z | x \text{ is divisible by } 6\}$ \\
+  \item [] $T = \{x \in Z | x \text{ is divisible by } 5\}$
+\end{itemize}
+\newblock
+\\
+Prove or disprove each of the following statements.
+\begin{itemize}
+  \item [I.] $R \subseteq T$
+  \item [II.] $T \subseteq R$
+  \item [III.] $T \subseteq S$
+\end{itemize}
+
+\subsection*{Answer}
+\textbf{a - I)}
+\begin{align*}
+  \bigcup_{i=1}^{4}A_i &= \bigcup_{i=1}^{4}\{i, i+1, i+2, ...\} \\
+  &= \{1, 1+1, 1+2, ...\} \cup \{2, 2+1, 2+2, ...\} \cup \{3, 3+1, 3+2, ...\} \cup \{4, 4+1, 4+2, ...\} \\
+  &= \{1, 2, 3, ... \} \cup \{2, 3, 4, ... \} \cup \{3, 4, 5, ... \} \cup \{4, 5, 6, ... \} \\
+  &= \{1, 2, 3, 4, 5, 6, ... \}
+\end{align*}
+\begin{align*}
+  \bigcap_{i=1}^{4}A_i &= \bigcap_{i=1}^{4}\{i, i+1, i+2, ...\} \\
+  &= \{1, 1+1, 1+2, ...\} \cap \{2, 2+1, 2+2, ...\} \cap \{3, 3+1, 3+2, ...\} \cap \{4, 4+1, 4+2, ...\} \\
+  &= \{1, 2, 3, ... \} \cap \{2, 3, 4, ... \} \cap \{3, 4, 5, ... \} \cap \{4, 5, 6, ... \} \\
+  &= \{4, 5, 6, ... \}
+\end{align*}
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the elements all integers that are greater than or equal to 4.
+\\ \\
+\textbf{a - II)}
+\begin{align*}
+  \bigcup_{i=1}^{4}A_i &= \bigcup_{i=1}^{4}\{0, i\} \\
+  &= \{0, 1\} \cup \{0, 2\} \cup \{0, 3\} \cup \{0, 4\} \\
+  &= \{0, 1, 2, 3, 4\}
+\end{align*}
+\begin{align*}
+  \bigcap_{i=1}^{4}A_i &= \bigcap_{i=1}^{4}\{0, i\} \\
+  &= \{0, 1\} \cap \{0, 2\} \cap \{0, 3\} \cap \{0, 4\} \\
+  &= \{0\}
+\end{align*}
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the element 0.
+\\ \\
+\textbf{a - III)}
+\begin{align*}
+  \bigcup_{i=1}^{4}A_i &= \bigcup_{i=1}^{4}(0, i) \\
+  &= (0, 1) \cup (0, 2) \cup (0, 3) \cup (0, 4) \\
+  &= (0, 4)
+\end{align*}
+\begin{align*}
+  \bigcap_{i=1}^{4}A_i &= \bigcap_{i=1}^{4}(0, i) \\
+  &= (0, 1) \cap (0, 2) \cap (0, 3) \cap (0, 4) \\
+  &= (0, 1)
+\end{align*}
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers $(0, 1)$.
+\\ \\
+\textbf{a - IV)}
+\begin{align*}
+  \bigcup_{i=1}^{4}A_i &= \bigcup_{i=1}^{4}(i, \infty) \\
+  &= (1, \infty) \cup (2, \infty) \cup (3, \infty) \cup (4, \infty) \\
+  &= (1, \infty)
+\end{align*}
+\begin{align*}
+  \bigcap_{i=1}^{4}A_i &= \bigcap_{i=1}^{4}(i, \infty) \\
+  &= (1, \infty) \cap (2, \infty) \cap (3, \infty) \cap (4, \infty) \\
+  &= (4, \infty)
+\end{align*}
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers $(4, \infty)$.
+\\ \\
+\textbf{b - I)} \\ \\
+\newblock
+[DISPROOF BY COUNTEREXAMPLE]
+\\ \\
+\xsupposition{None.}
+\xgoal{Disprove $R \subseteq T$.}
+\xdeductions
+$4 \in R$ but $4 \not\in T$
+\xlist{
+  \item $4 \in R$ because $4$ is divisible by 2.
+  \item $4 \not\in T$ because $4$ is not divisible by 8.
+  \item Hence, $4 \in R$ but $4 \not\in T$.
+}
+By definition of subset, $R \not\subseteq T$ since there exists an element in $R$ that is not in $T$.
+\\ \\
+\xconclusion{$R \not\subseteq T$}
+\\ \\
+\textbf{b - II)} \\ \\
+\newblock
+[ELEMENTAL PROOF]
+\\ \\
+\xsupposition{Let $x$ be a particular but arbitrarily chosen element of $T$.}
+\xgoal{Prove $T \subseteq R$.}
+\xdeductions
+$x \in R$
+\xlist{
+  \item By definition of divisibility, $x = 8n$ where $n$ is some integer. This is because $x$ is divisible by 8.
+  \item Let $m = 4n$.
+  \item By closure, $m$ is some integer because it is the product of two integers.
+  \item Then through substitution, $x = 8n = 2m$.
+  \item By definition of divisibility, $x$ is divisible by 2 because $x = 2m$.
+  \item Therefore, $x \in R$.
+}
+By definition of subset, $T \subseteq R$ because the arbitrarily but particular element $x$ of $T$ is in $R$. 
+\\ \\
+\xconclusion{$T \subseteq R$}
+\textbf{b - III)} \\ \\
+\newblock
+[ELEMENTAL PROOF]
+\\ \\
+\xsupposition{None.}
+\xgoal{Disprove $S \subseteq T$.}
+\xdeductions
+$12 \in S$ but $12 \not\in T$
+\xlist{
+  \item $12 \in S$ because $12$ is divisible by 6.
+  \item $12 \not\in T$ because $12$ is not divisible by 8.
+  \item Hence, $12 \in S$ but $12 \not\in T$.
+}
+By definition of subset, $S \not\subseteq T$ since there exists an element in $S$ that is not in $T$.
+\\ \\
+\xconclusion{$S \not\subseteq T$}
+\\ \\
+\end{document}

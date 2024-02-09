@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/Textbooks/all.pdf",
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/Textbooks/all.pdf",
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/Textbooks/all.pdf"
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
               }
             }
           }
@@ -160,15 +160,15 @@
     "type": "floating",
     "children": [
       {
-        "id": "080ba6066a187ea5",
+        "id": "a52853afdf92d441",
         "type": "window",
         "children": [
           {
-            "id": "b971c51a85341702",
+            "id": "32f35009fe407990",
             "type": "tabs",
             "children": [
               {
-                "id": "c085e16e012299b8",
+                "id": "378398dc6c7798e6",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -181,52 +181,23 @@
           }
         ],
         "direction": "vertical",
-        "x": 5565,
-        "y": 787,
+        "x": 1408,
+        "y": 889,
         "width": 1024,
         "height": 800,
-        "maximize": true,
-        "zoom": 1.5
-      },
-      {
-        "id": "d02891f35247d644",
-        "type": "window",
-        "children": [
-          {
-            "id": "19c091436ca5dd29",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "645aea0756701df4",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 3840,
-        "y": 1377,
-        "width": 1440,
-        "height": 1183,
         "maximize": false,
         "zoom": 1.5
       },
       {
-        "id": "427bc232f3a8aa49",
+        "id": "6b56455f5cddbc53",
         "type": "window",
         "children": [
           {
-            "id": "ef95eeabf167a934",
+            "id": "21a80b7f5fee4655",
             "type": "tabs",
             "children": [
               {
-                "id": "148dcda387e8bbf5",
+                "id": "c76ba635c6fd8269",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -239,32 +210,32 @@
           }
         ],
         "direction": "vertical",
-        "x": 3840,
-        "y": 0,
-        "width": 1440,
-        "height": 1377,
+        "x": 4368,
+        "y": 805,
+        "width": 1024,
+        "height": 800,
         "maximize": false,
         "zoom": 1.5
       }
     ]
   },
-  "active": "ad6dac498926e03d",
+  "active": "378398dc6c7798e6",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex(busy)",
-    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
     "Documents/Textbooks/all.pdf",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.aux",
+    "Documents/Textbooks/cartesian-products-formula.jpg",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.synctex(busy)",
+    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.synctex.gz",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.pdf",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.aux",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.log",
+    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.tex",
     "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
     "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex.gz",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.pdf",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
     "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
-    "Courses/Discrete Mathematics/Temporary/Template.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 1/Submission/NH Assigment 1 Part 1.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 1 Direct Proof Method.pdf",
-    "Courses/Discrete Mathematics/Week 3/Homework/Assignment 3, Part 2 Indirect Proof Methods.pdf",
     "Courses/Discrete Mathematics/Week 3/Assets/literally what.png",
     "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 1/Assets/Tautology and Contradiction Definition.png",
@@ -276,7 +247,6 @@
     "Courses/Discrete Mathematics/Week 3/Assets/Integer Prime Composite Definition.png",
     "Courses/Discrete Mathematics/Week 3/Assets/Integer Even Odd Definition.png",
     "Courses/Discrete Mathematics/Week 2/Homework/Instructions.md",
-    "Courses/Discrete Mathematics/Week 2/Assets/Geometric Formulae.png",
     "Courses/Discrete Mathematics/General Information.md",
     "Courses/Discrete Mathematics/Index.md"
   ]
