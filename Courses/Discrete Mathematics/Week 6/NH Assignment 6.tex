@@ -1,0 +1,232 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[mathscr]{euscript}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\usepackage{pifont}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+    \\ \\
+}
+
+\newcommand{\xsupposition}[1]{
+    \underline{Suppositions}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xgoal}[1]{
+    \underline{Goal}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xdeduction}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}[1]{
+    \underline{Conclusion}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xproof}{
+    \underline{Proof}:
+    \\ \\
+}
+
+\newcommand{\xbasistep}{
+    \underline{Basis Step}:
+    \\ \\
+}
+
+\newcommand{\xinductivehypothesis}{
+    \underline{Inductive Hypothesis}:
+    \\ \\
+}
+
+\newcommand{\xinductivesteps}{
+    \underline{Inductive Steps}:
+    \\ \\
+}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Homework 6
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\maketitle
+
+\newpage
+\section*{1}
+\underline{Given}:
+\\ \\
+$e_k = 5e_{k-1} + 3 \text{ for all integers } k \geq 2$ \\
+$e_1 = 2$
+\\ \\
+\underline{Iterations}:
+\\ \\
+\begin{align*}
+  e_1 &= 2 \\
+  e_2 &= 5e_1 + 3 \\
+  e_3 &= 5e_2 + 3 \\
+  &= 5(5e_1 + 3) + 3 \\
+  e_4 &= 5e_3 + 3\\
+  &= 5(5(5e_1 + 3) + 3) + 3\\
+  &= 5^3\cdot e_1 + 5^2\cdot3 + 5\cdot 3 + 3 \\
+  &= 5^{3}\cdot 2 + 3\sum_{i=0}^{3}5^{i-1} \\
+  &= 5^{4-1}\cdot 2 + 3\sum_{i=0}^{4-2}5^{i} \\
+  e_n &= 5^{n-1}\cdot 2 + 3\sum_{i=0}^{n-2}5^{i} \\
+\end{align*}
+\\ \\
+\underline{Guess}:
+\\ \\
+$e_n = 5^{n-1}\cdot 2 + 3\sum_{i=0}^{n-2}5^{i} \text{ for every integer }n \geq 1$
+
+
+\newpage
+\section*{2}
+\xproof
+Given the sequence $e_1, e_2, \ldots, e_n$
+\begin{align*}
+  e_1 &= 2 \hspace*{13cm}\\
+  e_k &= 5e_{k-1} + 3 \text{ for all integers } k \geq 2
+\end{align*}
+Let $P(n) \equiv e_n = 5^{n-1}\cdot 2 + 3\sum_{i=0}^{n-2}5^{i} \text{ for every integer }n \geq 1$
+\\ \\
+\xbasistep
+\begin{align*}
+  P(1) = e_1 &= 5^{1-1}\cdot 2 + 3\sum_{i=0}^{1-2}5^{i} \\
+  &= 5^0 \cdot 2 + 3 \sum _{i=0}^{-1}5^{i} \\
+  &= 2 + 3\cdot 0 \\
+  &= 2 \\
+\end{align*}
+\newblock
+\\ \\
+The base case for $P(1)$ holds true.
+\\ \\
+\xinductivehypothesis
+Suppose that for an arbitrary but particular integer $j$, \\
+$$ P(j) \equiv e_j = 5^{j-1}\cdot 2 + 3\sum_{i=0}^{j-2}5^{i} \text{ for every integer }j \geq 1$$
+is true.
+\\ \\
+\xinductivesteps
+We must show that $P(j+1)$ is true. Hence we must demonstrate that,
+$$ P(j+1) \equiv e_{j+1} = 5^{j}\cdot 2 + 3\sum_{i=0}^{j-1}5^{i} $$
+\\
+By algebra, $j+1$ can be plugged into the original sequence defintion:
+\begin{align*}
+  P(j+1) = e_{j+1} &= 5e_j+3 \\
+  &= 5\left(5^{j-1}\cdot 2 + 3\sum_{i=0}^{j-2}5^{i}\right) + 3  \text{ \hspace*{1cm}(Subsitution of Inductive Hypothesis)}\\
+  &= 5\cdot5^{j-1}\cdot 2 + 5\cdot 3\sum_{i=0}^{j-2}5^{i} + 3\sum_{i=0}^{0}5^i \\ 
+  &= 5^j\cdot 2 + 3\sum_{i=0}^{j-2}5^{i+1} + 3\sum_{i=0}^{0}5^i \\ 
+  &= 5^j\cdot 2 + 3\sum_{i=1}^{j-1}5^{i} + 3\sum_{i=0}^{0}5^i \\ 
+  &= 5^j\cdot 2 + 3\left(\sum_{i=1}^{j-1}5^{i} + \sum_{i=0}^{0}5^i\right) \\ 
+  &= 5^j\cdot 2 + 3\sum_{i=0}^{j-1}5^{i} \\ 
+\end{align*}
+\newblock
+Thus, with was shown that $P(j+1) \equiv e_{j+1} = 5^{j}\cdot 2 + 3\sum_{i=0}^{j-1}5^{i}$ holds true.
+\\ \\
+\xconclusion{
+Since both the basis and inductive step have been proved, the original expression, 
+$$P(n) \equiv e_n = 5^{n-1}\cdot 2 + 3\sum_{i=0}^{n-2}5^{i} \text{ for every integer }n \geq 1$$
+is true.
+}
+
+
+\newpage
+\section*{3}
+\underline{Given}:
+\\ \\
+$t_k = t_{k-1} + 7k^3 + 4k + 5 \text{ for all integers } k \geq 1$ \\
+$t_0 = 2$
+\\ \\
+\underline{Iterations}:
+\\ \\
+\begin{align*}
+  t_0 &= 2 \\
+  t_1 &= t_0 + 7\cdot 1^3 + 4\cdot1 + 5 \\
+  &= 2 + 7\cdot 1^3 + 4\cdot1 + 5 \\
+  t_2 &= t_1 + 7\cdot 2^3 + 4\cdot2 + 5 \\
+  &= (2 + 7\cdot 1^3 + 4\cdot1 + 5) + 7\cdot 2^3 + 4\cdot2 + 5 \\
+  &= 2 + 7(1^3 + 2^3) + 4(1+2) + 2(5) \\
+  t_3 &= t_2 + 7\cdot 3^3 + 4\cdot2 + 5 \\
+  &= ((2 + 7\cdot 1^3 + 4\cdot1 + 5) + 7\cdot 2^3 + 4\cdot2 + 5) + 7\cdot 3^3 + 4\cdot2 + 5 \\
+  &= 2 + 7(1^3 + 2^3 + 3^3) + 4(1+2+3) + 3(5) \\
+  t_n &= 7\sum_{i=1}^{n}n^3 + 4\sum_{i=1}^{n}n + 5n + 2
+\end{align*}
+\\ \\
+\underline{Guess}:
+\\ \\
+$t_n = 7\sum_{i=1}^{n}n^3 + 4\sum_{i=1}^{n}n + 5n + 2 \text{ for every integer }n \geq 0$ \\
+\newpage
+\section*{4}
+I - Base: The strings $ab$ and $ba$ are in set $S$.
+\\ \\
+II - Recursion: New strings are formed according to the following rules:
+\begin{itemize}
+  \item [a.] If $u$ is any string in $S$, or if $u$ is either the individual character $a$ or $b$; then
+  \begin{center}
+    $aub$ is a string in $S$\\
+  \end{center}
+  where $aub$ is the concatenation of $a$, $u$ and $b$; $aub$ is obtained by appending $a$ on the left of $u$, and $b$ on the right of $u$. 
+  \item [b.] If $u$ is any string in $S$, or if $u$ is either the individual character $a$ or $b$; then
+  \begin{center}
+    $bua$ is a string in $S$\\
+  \end{center}
+  where $bua$ is the concatenation of $b$, $u$ and $a$; $bua$ is obtained by appending $b$ on the left of $u$, and $a$ on the right of $u$.
+\end{itemize} 
+III - Restriction: Every string in $S$ is obtainable from the base and the recursion.
+
+
+\newpage
+\section*{5}
+I - Base: The individual string characters $a$ and $b$ are in set $S$.
+\\ \\
+II - Recursion: New strings are formed according to the following rules:
+\begin{itemize}
+  \item [a.] If $u$ is any string in $S$, then
+  \begin{center}
+    $aua$ is a string in $S$\\
+  \end{center}
+  where $aua$ is the concatenation of $a$, $u$ and $b$; $aua$ is obtained by appending $a$ on both the left and right side of $u$.
+  \item [b.] If $u$ is any string in $S$, then
+  \begin{center}
+    $bub$ is a string in $S$\\
+  \end{center}
+  where $bub$ is the concatenation of $a$, $u$ and $b$; $bub$ is obtained by appending $b$ on both the left and right side of $u$.
+  \item [c.] If $u$ is any string in $S$, then
+  \begin{center}
+    $aub$ is a string in $S$\\
+  \end{center}
+  where $aub$ is the concatenation of $a$, $u$ and $b$; $aub$ is obtained by appending $a$ on the left of $u$, and $b$ on the right of $u$.
+  \item [d.] If $u$ is any string in $S$, then
+  \begin{center}
+    $bua$ is a string in $S$\\
+  \end{center}
+  where $bua$ is the concatenation of $a$, $u$ and $b$; $bua$ is obtained by appending $b$ on the left of $u$, and $a$ on the right of $u$. 
+\end{itemize}
+III - Restriction: Every string in $S$ is obtainable from the base and the recursion.
+\end{document}
