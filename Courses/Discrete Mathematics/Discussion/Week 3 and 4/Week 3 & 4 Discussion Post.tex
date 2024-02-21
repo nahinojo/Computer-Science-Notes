@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{titling}
+\usepackage{soul}
+\usepackage{xcolor}
 \usepackage[mathscr]{euscript}
 \let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
 \usepackage[scr]{rsfso}
@@ -67,6 +69,10 @@ For every real number $x$, if $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 \geq 0$, then $x
 
 \subsection*{Answer}
 [PROOF BY CONTRAPOSITIVE] \\ \\
+\underline{\hl{Contrapositive of the given statement}}:
+\\ \\
+\hl{For any real number $x$, if $x<0$ then $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 < 0$.}
+\\ \\
 \xsupposition{$x$ is a real number and $x < 0$.}
 \xgoal{Prove that $x^5 - 4x^4 + 3x^3 - x^2 + 3x - 4 < 0$.}
 \xdeductions
@@ -185,7 +191,7 @@ No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is b
   &= (0, 1) \cap (0, 2) \cap (0, 3) \cap (0, 4) \\
   &= (0, 1)
 \end{align*}
-No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers $(0, 1)$.
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers \hl{within the range} $(0, 1)$.
 \\ \\
 \textbf{a - IV)}
 \begin{align*}
@@ -198,14 +204,14 @@ No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is b
   &= (1, \infty) \cap (2, \infty) \cap (3, \infty) \cap (4, \infty) \\
   &= (4, \infty)
 \end{align*}
-No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers $(4, \infty)$.
+No, the sets $A_1$, $A_2$, $A_3$, and $A_4$ are not mutually disjoint. This is because they all share the set of numbers \hl{within the range} $(4, \infty)$.
 \\ \\
 \textbf{b - I)} \\ \\
 \newblock
 [DISPROOF BY COUNTEREXAMPLE]
 \\ \\
-\xsupposition{None.}
-\xgoal{Disprove $R \subseteq T$.}
+\xsupposition{\hl{Suppose not. Let's assume $R \subseteq T$.}}
+\xgoal{\hl{We must arrive at a contradiction.}}
 \xdeductions
 $4 \in R$ but $4 \not\in T$
 \xlist{
@@ -221,15 +227,15 @@ By definition of subset, $R \not\subseteq T$ since there exists an element in $R
 \newblock
 [ELEMENTAL PROOF]
 \\ \\
-\xsupposition{Let $x$ be a particular but arbitrarily chosen element of $T$.}
-\xgoal{Prove $T \subseteq R$.}
+\xsupposition{\hl{Let $x$ be a particular but arbitrarily chosen element of $T$.}}
+\xgoal{\hl{Prove $T \subseteq R$.}}
 \xdeductions
 $x \in R$
 \xlist{
   \item By definition of divisibility, $x = 8n$ where $n$ is some integer. This is because $x$ is divisible by 8.
   \item Let $m = 4n$.
   \item By closure, $m$ is some integer because it is the product of two integers.
-  \item Then through substitution, $x = 8n = 2m$.
+  \item Then through substitution, $x = 8n = 2(4n) =2m$.
   \item By definition of divisibility, $x$ is divisible by 2 because $x = 2m$.
   \item Therefore, $x \in R$.
 }
@@ -240,8 +246,8 @@ By definition of subset, $T \subseteq R$ because the arbitrarily but particular 
 \newblock
 [ELEMENTAL PROOF]
 \\ \\
-\xsupposition{None.}
-\xgoal{Disprove $S \subseteq T$.}
+\xsupposition{Suppose not. Let's assume $S \subseteq T$.}
+\xgoal{We must arrive at a contradiction.}
 \xdeductions
 $12 \in S$ but $12 \not\in T$
 \xlist{

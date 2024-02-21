@@ -4,26 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4e55a8f4270079f3",
+        "id": "f64408367feb9293",
         "type": "tabs",
         "children": [
           {
-            "id": "ad6dac498926e03d",
+            "id": "38190ffc8e1d819c",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
                 "file": "Documents/Textbooks/all.pdf"
-              }
-            }
-          },
-          {
-            "id": "55e58b2f5eb21208",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf"
               }
             }
           }
@@ -160,15 +150,15 @@
     "type": "floating",
     "children": [
       {
-        "id": "a52853afdf92d441",
+        "id": "63d811f9e808715c",
         "type": "window",
         "children": [
           {
-            "id": "32f35009fe407990",
+            "id": "9d9e3ac12063e691",
             "type": "tabs",
             "children": [
               {
-                "id": "378398dc6c7798e6",
+                "id": "f5fea1ec537d0cb0",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -181,23 +171,23 @@
           }
         ],
         "direction": "vertical",
-        "x": 1408,
-        "y": 889,
+        "x": 5867,
+        "y": 1067,
         "width": 1024,
         "height": 800,
-        "maximize": false,
+        "maximize": true,
         "zoom": 1.5
       },
       {
-        "id": "6b56455f5cddbc53",
+        "id": "bef3454eb5bf841a",
         "type": "window",
         "children": [
           {
-            "id": "21a80b7f5fee4655",
+            "id": "697be84ec233a163",
             "type": "tabs",
             "children": [
               {
-                "id": "c76ba635c6fd8269",
+                "id": "ede3f1cb25e5977d",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -210,28 +200,29 @@
           }
         ],
         "direction": "vertical",
-        "x": 4368,
-        "y": 805,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
+        "x": 3840,
+        "y": 0,
+        "width": 1440,
+        "height": 1280,
+        "maximize": true,
         "zoom": 1.5
       }
     ]
   },
-  "active": "378398dc6c7798e6",
+  "active": "f5fea1ec537d0cb0",
   "lastOpenFiles": [
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.aux",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.synctex.gz",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.pdf",
     "Documents/Textbooks/all.pdf",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Documents/Textbooks/cartesian-products-formula.jpg",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.synctex.gz",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.pdf",
+    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.aux",
     "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.synctex.gz",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.pdf",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.aux",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 1.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.log",
-    "Courses/Discrete Mathematics/Week 4/Homework/Submission/NH Assignment 4 Part 2.tex",
+    "Documents/Textbooks/cartesian-products-formula.jpg",
     "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
     "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
