@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{makecell}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+\title{\textbf{Assignment 7c}}
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+
+\maketitle
+
+In Python, mutation and rebinding both alter a variable's definition. The difference is that mutation does not construct a new object when redefining. Instead, mutation alters the internal state of the variable's value itself. Rebinding, on the other hand, redefines the variable by creating an entirely new value. Now, rebinding may or may not utilize the prior variable's value but it does define using a separately constructed value. In the analogy of painting a picture, Mutation can be thought of adding a tree to a landscape or by changing the color of all the mountains. Conversely, rebinding can be thought of as painting these changes by starting from a brand new canvas and not by altering the old one. 
+
+
+\newblock
+\\
+Here's an example psuedocode that may trip someone up that does not know the difference. In this program I \textit{intend} to reverse the order of the elements in a list, but can you spot the issue?
+\\
+-----------------------------------------------------------------------------
+\begin{itemize}
+  \item [] some\_list = [1, 2, 3, 4, 5]
+  \item [] for i in range(len(some\_list) // 2):
+  \item [] \hspace{10mm} some\_list[i] = some\_list[len(some\_list) - i - 1]
+\end{itemize}
+-----------------------------------------------------------------------------
+\\
+Now if you were to print the final value of some\_list you would not get the reversed form: [5, 4, 3, 2, 1]. Instead, you would get: [5, 4, 3, 4, 5]. This is because the program mutates the original list when attempting to reverse it, and hence the program uses a newly mutated version for each iteration. 
+\\ \\
+A solution to this is to use rebinding:
+\\ \\
+-------------------------------------------------------------------------------
+\begin{itemize}
+  \item [] some\_list = [1, 2, 3, 4, 5]
+  \item [] new\_list = []
+  \item [] for i in range(len(some\_list)):
+  \item [] \hspace{10mm} new\_list.append(some\_list[len(some\_list) - i - 1])
+  \item [] some\_list = new\_list
+\end{itemize}
+-------------------------------------------------------------------------------
+\\
+This does in fact reverse the list in place by creating a new\_list object to track changes. Then, it redefines some\_list to be the new\_list object.
+\end{document}

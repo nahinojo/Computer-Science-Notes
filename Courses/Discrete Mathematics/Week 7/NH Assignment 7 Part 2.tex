@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[mathscr]{euscript}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\usepackage{pifont}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,fit,arrows}
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+\definecolor{myblue}{RGB}{31, 179, 224}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+    \\ \\
+}
+
+\newcommand{\xsupposition}[1]{
+    \underline{Suppositions}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xgoal}[1]{
+    \underline{Goal}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xdeduction}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}[1]{
+    \underline{Conclusion}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xproof}{
+    \underline{Proof}:
+    \\ \\
+}
+
+\newcommand{\xbasistep}{
+    \underline{Basis Step}:
+    \\ \\
+}
+
+\newcommand{\xinductivehypothesis}{
+    \underline{Inductive Hypothesis}:
+    \\ \\
+}
+
+\newcommand{\xinductivesteps}{
+    \underline{Inductive Steps}:
+    \\ \\
+}
+
+\newcommand\xsetpos{6}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Assignment 7 Part 2
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\maketitle
+\section*{Exercise Set 9.4}
+\subsection*{8}
+
+No.
+\\ \\
+Partition the set T into the following disjoint subsets:
+\\
+$$ \{1,9\}\text{, }\{2,8\}\text{, }\{3,7\}\text{, }\{4,6\}\text{, and }\{5\}$$
+Let the pigeons be the five selected integers (call them $a_1$, $a_2$, $a_3$, $a_4$, and $a_5$) 
+and let the pigeonholes be the subsets of the partition. 
+The function $P$ from pigeon to pigeon holes is defined by letting $P(a_i)$ equal the subset that contains $a_i$.
+\\ \\
+Note that the number of pigeons is equal to the number of pigeonholes, and that the pigeonholes are disjoint. This must mean there exists some selection of five integers where each integer is a distinct member of a subset within the partition; there exists some selection where $P$ is one-to-one. Or in the context of the pigeonhole principle, there is a case where each pigeon is in its own pigeonhole.
+\\ \\
+In this case, the subset \{5\} from the partition is the only subset that is \textit{satisfied}. That is, the selection of integers as a whole will not fully complete any of the other four subsets: $\{1,9\}\text{, }\{2,8\}\text{, }\{3,7\}\text{, }\{4,6\}$. As an example, this may be where the five selected integers are \{1,2,3,4,5\}.
+\\ \\
+For it to be true that any selection of integers \textit{must} have a pair that summate to 10, then each and every possible selection must satisfy one of the other four subsets of the partition. Since there exists a selection that does not satisfy these other four subsets, then the precedence is not true; there exists a selection where no integer pair summates to 10.
+
+\newpage
+\subsection*{11}
+Yes.
+\\ \\
+Let the pigeons represent the selection of integers. Hence, there are $n+1$ total pigeons. 
+\\ \\
+Let the pigeonholes represent the number of odd integers within the range from $1$ to $2n$. By definition of even, there are $n$ even integers within the range. And so there must also be $n$ odd integers within the range.
+\\ \\
+Since the selection is for $n+1$ integers yet there are only $n$ odd integers in the range, by pigeonhole principle one of the selected elements must be even; there are $n+1$ pigeons yet only $n$ pigeonholes. 
+\\ \\ 
+Therefore, it must be true that a selection $n+1$ integers in the range from $1$ to $2n$ must contain at least one even integer.
+
+\newpage
+\subsection*{19}
+To ensure that two integers in the range from 100 to 999 have a digit in common, we must pick a number of integers equal to the maximum number of unique (not in common) integers possible, plus one extra pick. Then what is the maximum possible number of unique integers? Again if this number is exceeded, then there are at least two integers with at least one digit in common. 
+\\ \\
+Lets define the pigeons as the set of all digits from all picked integers. For example, picking the integers 112 and 232 would correspond to 6 total digits (pigeons).
+\\ \\
+Lets define the pigeonholes as the selectable digits 0-9.
+\\ \\
+Now the maximum number pigeons per pigeonhole is three, at least while still retaining uniquity. As an example, picking the number 222 would retain uniquity yet completely fill the 2 pigeonhole.
+\\ \\
+By the generalized pigeonhole principle, we can calculate the maximum number of pigeons (total digits). This number would be the maximum pigeons per holes multiplied by the total pigeonholes, which would yield $3\cdot10 = 30$. So, you might now state that there is a case for distributing 30 pigeons evenly across 10 pigeonholes. Or rather, there exists a selection of integers with 30 total digits that still retains uniquity.
+\\ \\
+However, there's a catch! Since the range is from 100 to 999, it is impossible to pick the integer 000. This means you cannot have three 0 pigeons in the 0 pigeonhole while still retaining unquity. The above calculation of 30 total pigeons above presumes three 0 pigeons in one 0 pigeonhole. To rectify this, remove three 0s from the calculation. 
+\\ \\
+Hence, this would yield 27 maximum pigeons. Or rather, a maximally unique selection of integers would contain 27 digits in total. Since each integer contains 3 digits, then you can pick up to 9 integers while still retaining uniquity. 
+\\ \\
+Therefore, to ensure that two integers in the range from 100 to 999 have a digit in common, we must guess $9+1=10$ times. This is verified in the case where the first 9 picks are \{100, 222, 333, 444, 555, 666, 777, 888, 999\}, guessing any further would result in digit duplication.
+\newpage
+\subsection*{30}
+By contrapositive of GPHP, the most amount of pennies we can have to ensure four in each year is equal to the number of different years times four pennies per year. This means we can have a total of $3\cdot4=12$ pennies to ensure four in each year. Any number of pennies greater than 12 would will guarantee five pennies in at least one year. Hence, we must pick 13 pennies to guarantee 5 per year.
+
+\newpage
+\subsection*{34}
+We know that there 210 different ways to choose a subset 4 integers from the set of 10 integers, within the range of 1 to 50. 
+\\ \\
+Let the pigeons represent all the different ways to choose a subset of 4. Hence, there are 210 pigeons.
+\\ \\
+Let the pigeonholes respresent all possible distinct sums within the range. The minimum summation would be of the set $\{1,2,3,4\}\rightarrow10$. And the maximum summation would be of the set $\{47, 48, 49, 50\}\rightarrow 194$. Now there are 185 numbers within this range, hence, there are 185 pigeonholes.
+\\ \\
+Since there are 210 pigeons yet 185 pigeonholes, then the pigeonhole principle is satisfied. Or in other words, since there are 210 different possible subsets yet only different value to summate to, then there must be at least two subsets that summate to the same value.
+\end{document}

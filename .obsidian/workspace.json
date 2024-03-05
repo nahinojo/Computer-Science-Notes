@@ -4,11 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "f64408367feb9293",
+        "id": "a986236d638ef46e",
         "type": "tabs",
         "children": [
           {
-            "id": "38190ffc8e1d819c",
+            "id": "a4de5bd8bc99881c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+              }
+            }
+          },
+          {
+            "id": "845a98aeb4c2f609",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+              }
+            }
+          },
+          {
+            "id": "75872193c6e09a00",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -67,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5086555480957
+    "width": 268.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -146,19 +167,19 @@
     }
   },
   "floating": {
-    "id": "c8f02c2dee41bae9",
+    "id": "46edf5593c0f4863",
     "type": "floating",
     "children": [
       {
-        "id": "63d811f9e808715c",
+        "id": "63de94520fc0ba0e",
         "type": "window",
         "children": [
           {
-            "id": "9d9e3ac12063e691",
+            "id": "e5745b41e7f9041b",
             "type": "tabs",
             "children": [
               {
-                "id": "f5fea1ec537d0cb0",
+                "id": "7ef3b0b2b00647c7",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -171,62 +192,33 @@
           }
         ],
         "direction": "vertical",
-        "x": 5867,
-        "y": 1067,
+        "x": 1408,
+        "y": 889,
         "width": 1024,
         "height": 800,
-        "maximize": true,
-        "zoom": 1.5
-      },
-      {
-        "id": "bef3454eb5bf841a",
-        "type": "window",
-        "children": [
-          {
-            "id": "697be84ec233a163",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ede3f1cb25e5977d",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 3840,
-        "y": 0,
-        "width": 1440,
-        "height": 1280,
         "maximize": true,
         "zoom": 1.5
       }
     ]
   },
-  "active": "f5fea1ec537d0cb0",
+  "active": "a4de5bd8bc99881c",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.aux",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.synctex.gz",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 2.pdf",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.synctex(busy)",
     "Documents/Textbooks/all.pdf",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.synctex.gz",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.pdf",
-    "Courses/Discrete Mathematics/Week 5/Homework/Submission/NH Assignment 5 Part 1.aux",
-    "Documents/Cheatsheets/latex-symbols-cheatsheet.pdf",
-    "Documents/Textbooks/cartesian-products-formula.jpg",
-    "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.synctex.gz",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.pdf",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.aux",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.log",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.tex",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.synctex(busy)",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.synctex.gz",
+    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.pdf",
+    "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
-    "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
+    "Documents/Textbooks/cartesian-products-formula.jpg",
+    "Courses/Discrete Mathematics/Week 4/Week 4 Notes.md",
     "Courses/Discrete Mathematics/Week 3/Assets/literally what.png",
     "Courses/Discrete Mathematics/Week 1/Homework/Instructions.md",
     "Courses/Discrete Mathematics/Week 1/Assets/Tautology and Contradiction Definition.png",
