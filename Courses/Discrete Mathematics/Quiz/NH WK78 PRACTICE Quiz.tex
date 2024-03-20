@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[mathscr]{euscript}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\usepackage{pifont}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+}
+
+\newcommand{\xsupposition}[1]{
+    \underline{Suppositions}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xgoal}[1]{
+    \underline{Goal}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xdeduction}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}[1]{
+    \underline{Conclusion}:
+    \\ \\
+    #1
+    \\ \\
+}
+
+\newcommand{\xproof}{
+    \underline{Proof}:
+    \\ \\
+}
+
+\newcommand{\xbasistep}{
+    \underline{Basis Step}:
+    \\ \\
+}
+
+\newcommand{\xinductivehypothesis}{
+    \underline{Inductive Hypothesis}:
+    \\ \\
+}
+
+\newcommand{\xinductivesteps}{
+    \underline{Inductive Steps}:
+    \\ \\
+}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Week 7 and 8 Quiz
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\maketitle
+\section*{Responses}
+\subsection*{1 - a}
+Let the pigeonholes represent the even integers within the range from 0 to 50. 
+By definition of even, there are 26 even integers within this range. 
+Hence, there are 26 pigeonholes.
+\\ \\
+The pigeons would then represent the selected integers. 
+Hence, the pigeonholes can support a maximum of 26 pigeons.
+Or rather, you can select up to 26 even integers.
+\\ \\
+Then to guarantee that a selected integer is odd, you first must gaurantee your selection fulfills the maximum number of even pigeonholes, then add one extra.
+Therefore, you must select at least 27 integers within the range of 0 to 50 to gaurantee one of the selected integers is odd. 
+\subsection*{1 - b}
+Let the pigeonholes represent the color options. Hence there are 2 pigeonholes, one for red and one for blue.
+\\ \\
+Let the pigeons represent the selected balls themselves. A selected ball (pigeon) may correspond to either the color red or blue (pigeonhole).
+\\ \\
+To fullfill the requirement that a selection contains a pair of the same color, you essentially must have multiple pigeons in the same hole. 
+To guarantee this, the selection of pigeons must be greater than the number of pigeonholes. Hence, the selection must then be 3 or more balls.
+\\ \\
+To gaurantee a selection of balls contain a pair of the same color, you must select at least 3 balls.
+\subsection*{2 - a}
+Let $T$ represent the set of all students. Hence, $N(T) = 50$. \\
+Let $A$ represent the subset of all students that like coffee. Hence, $N(A) = 23$. \\ 
+Let $B$ represent the subset of all students that like tea. Hence, $N(B) = 36$. \\
+Furthermore, there are 12 students that like both. Hence, $N(A \cap B) = 12$.
+\\ \\
+The number of students that like coffee or tea can then be calculated: \\
+\begin{align*}
+  N(A \cup B) &= N(A) + N(B) - N(A \cap B) \\
+  &= 23 + 36 - 12 \\ 
+  &= 47 \\
+\end{align*}
+The number of students that like neither coffee nor tea can then be calculated: \\
+\begin{align*}
+  A^c \cap B^c &= (A \cup B)^c \\
+  &= T - (A \cup B)\\
+  N(A^c \cap B^c) &= N(T - (A \cup B)) \\
+  &= N(T) - N(A \cup B) \\
+  &= 50 - 47 \\
+  &= 3
+\end{align*}
+There are 3 students that like neither coffee nor tea.
+\subsection*{2 - b}
+\begin{itemize}
+  \item [i.] Considering the restriction, there are 3 locations for any 26 letters as well as 2 locations for any ten digits.
+  \\ \\
+  Hence, there are $26^3 \cdot 10^2$ license plates where the plates begin with A and end in 0.
+  \item [ii.] Let $T$ represent all possible license plates with no \textit{specific} character restrictions. \\
+  Let $E_{99}$ represent the set of license plates that end in 99. \\
+  Let $E_{\sim99}$ represent the set of license plates that do not end in 99.
+  \\ \\
+  The number of license plates that do not end in 99 can then be calculated: \\
+  \begin{align*}
+    N(E_{\sim99}) &= N(T) - N(E_{99}) \\
+    &= 26^4 \cdot 10^3 - 26^4 \cdot 10^1 \\
+    &= 452406240 \\
+  \end{align*}
+  There are 452,406,240 license plates that do not end in 99.
+\end{itemize}
+\subsection*{3 - a}
+$10!$
+\subsection*{3 - b}
+$2\cdot 9!$
+\subsection*{3 - c}
+Let $T$ represent the set of all combinations. \\
+Let $E$ represent the subset of all combinations where $P$, $O$, and $R$ are together. 
+\begin{align*}
+  N(T) &= 10! \\
+  N(E) &= 3! \cdot 8! \\
+  N(E^c) &= 10! - 3! \cdot 8! \\
+\end{align*}
+\subsection*{4 - a}
+$$\binom{6}{4} + \binom{9}{4}$$
+\subsection*{4 - b}
+$$\binom{9}{2}\cdot\binom{6}{2}$$
+\subsection*{5 - a}
+$$P(6, 3)$$
+\subsection*{5 - b}
+$$\frac{P(6, 3)}{2}$$
+\subsection*{6}
+$$\binom{8}{2}\binom{6}{2}\binom{4}{2}\binom{2}{1}\binom{1}{1}$$
+\subsection*{7}
+$$\binom{21 + 4 - 1}{21}$$
+\subsection*{8 - a}
+Let $T$ represent the set of all pastry combinations. \\
+Let $E_{\geq3}$ represent the subset of all combinations where there are at least 3 eclairs. \\
+\begin{align*}
+  N(E_{\geq3}) &= \binom{27+5-1}{27}
+\end{align*}
+\subsection*{8 - b}
+Let $E_{\leq5}$ represent the subset of all combinations where there are at most 5 eclairs. \\
+\begin{align*}
+  N(E_{\leq5}) &= N(T) - N(E_{\geq6})\\
+  &= \binom{30+5-1}{30} - \binom{24+5-1}{24}
+\end{align*}
+\end{document}

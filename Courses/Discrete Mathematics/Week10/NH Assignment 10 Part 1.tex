@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % Math packages
+\usepackage[mathscr]{euscript}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{geometry} % Adjust page margins
+\usepackage{titlesec} % Adjust section and subsection formatting
+
+
+\usetikzlibrary{automata,chains}
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in, paperwidth=16in, paperheight=12in}
+
+\newcommand{\xlist}[1]{
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\centerdot$}
+        #1
+    \end{itemize}
+    \newblock
+}
+
+\newcommand{\xsupposition}{
+    \underline{Suppositions}:
+    \\ \\
+}
+
+\newcommand{\xgoal}{
+    \underline{Goal}:
+    \\ \\
+}
+
+\newcommand{\xdeduction}{
+    \underline{Deductions}:
+    \\ \\
+}
+
+\newcommand{\xconclusion}{
+    \underline{Conclusion}:
+    \\ \\
+}
+
+\newcommand{\xproof}{
+    \underline{Proof}:
+    \\ \\
+}
+
+\newcommand{\xbasistep}{
+    \underline{Basis Step}:
+    \\ \\
+}
+
+\newcommand{\xinductivehypothesis}{
+    \underline{Inductive Hypothesis}:
+    \\ \\
+}
+
+\newcommand{\xinductivesteps}{
+    \underline{Inductive Steps}:
+    \\ \\
+}
+
+\title{
+  \textbf{CS-225: Discrete Structures in CS} \\
+  Assignment 10
+  }
+\author{Noah Hinojos}
+\date{\today}
+
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\begin{document}
+\maketitle
+
+\section*{Canvas Problems}
+\subsection*{1}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  Step & $S$ & $L(b)$ & $L(a)$ & $L(c)$ & $L(d)$ & $L(e)$ & $L(f)$ & $L(g)$ & $L(h)$ & $L(i)$ & $L(j)$ & $L(z)$\\
+  \hline
+  0 & $\varnothing$ & 0 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\
+  1 & $\{b\}$ & $0,b$ & $3, b$ & $2, b$ & $\infty$ & $5, b$ & $7, b$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\
+  2 & $\{b, c\}$ & $0,b$ & $3, b$ & $2, (b, c)$ & $5, (b,c)$ & $5, b$ & $4, (b,c)$ & $8,(b,c)$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\
+  3 & $\{b, c, a\}$ & $0,b$ & $3, (b,a)$ & $2, (b, c)$ & $5, (b,c)$ & $5, b$ & $4, (b,c)$ & $8,(b,c)$ & $7, (b,a,h)$ & $\infty$ & $\infty$ & $\infty$ \\
+  4 & $\{b, c, a, f\}$ & $0,b$ & $3, (b,a)$ & $2, (b, c)$ & $5, (b,c)$ & $5, b$ & $4, (b,c,f)$ & $8,(b,c)$ & $7, (b,a,h)$ & $8, (b,c,f)$ & $7,(b,c,f)$ & $\infty$ \\
+  5 & $\{b, c, a, f, e\}$ & $0,b$ & $3, (b,a)$ & $2, (b, c)$ & $5, (b,c)$ & $5, (b,e)$ & $4, (b,c,f)$ & $8,(b,c)$ & $7, (b,a,h)$ & $8, (b,c,f)$ & $7,(b,c,f)$ & $\infty$ \\
+  6 & $\{b, c, a, f, e, d\}$ & $0,b$ & $3, (b,a)$ & $2, (b, c)$ & $5, (b,c,d)$ & $5, (b,e)$ & $4, (b,c,f)$ & $8,(b,c)$ & $7, (b,a,h)$ & $8, (b,c,f)$ & $7,(b,c,f)$ & $7,(b,c,d)$ \\
+  7 & $\{b, c, a, f, e, d, j\}$ & $0,b$ & $3, (b,a)$ & $2, (b, c)$ & $5, (b,c,d)$ & $5, (b,e)$ & $4, (b,c,f)$ & $8,(b,c)$ & $7, (b,a,h)$ & $8, (b,c,f)$ & $7,(b,c,f,j)$ & $7,(b,c,d)$ \\
+\end{tabular}
+\newblock
+\\ \\
+The shortest path from $b$ to $j$ is $b \rightarrow c \rightarrow f \rightarrow j$ and is of length 7.
+
+\subsection*{2}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    Step & $S$ & $L(a)$ & $L(b)$ & $L(c)$ & $L(d)$ & $L(e)$ & $L(f)$ & $L(g)$ & $L(h)$ & $L(i)$ & $L(j)$ & $L(z)$\\
+    \hline
+    0 & $\varnothing$ & 0 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\    
+    1 & $a$ & $0,a$ & $2,a$ & $6,a$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\    
+    2 & $\{a,b\}$ & $0,a$ & $2,(a,b)$ & $6,a$ & $5,(a,b)$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\    
+    3 & $\{a,b,d\}$ & $0,a$ & $2,(a,b)$ & $6,a$ & $5,(a,b,d)$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $7,(a,b,d)$ & $\infty$ \\    
+    4 & $\{a,b,d,c\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $7,(a,b,d)$ & $\infty$ \\    
+    5 & $\{a,b,d,c,j\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $\infty$ & $12,(a,b,d,j)$ & $\infty$ & $10,(a,b,d,j)$ & $9,(a,b,d,j)$ & $7,(a,b,d,j)$ & $\infty$ \\    
+    6 & $\{a,b,d,c,j,i\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $\infty$ & $10,(a,b,d,j,i)$ & $\infty$ & $10,(a,b,d,j)$ & $9,(a,b,d,j,i)$ & $7,(a,b,d,j)$ & $\infty$ \\    
+    7 & $\{a,b,d,c,j,i,h\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $\infty$ & $10,(a,b,d,j,i)$ & $\infty$ & $10,(a,b,d,j,h)$ & $9,(a,b,d,j,i)$ & $7,(a,b,d,j)$ & $\infty$ \\    
+    8 & $\{a,b,d,c,j,i,h,f\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $12,(a,b,d,j,i,f)$ & $10,(a,b,d,j,i,f)$ & $14,(a,b,d,j,i,f)$ & $10,(a,b,d,j,h)$ & $9,(a,b,d,j,i)$ & $7,(a,b,d,j)$ & $13,(a,b,d,j,i,f)$ \\    
+    8 & $\{a,b,d,c,j,i,h,f,z\}$ & $0,a$ & $2,(a,b)$ & $6,(a,c)$ & $5,(a,b,d)$ & $12,(a,b,d,j,i,f)$ & $10,(a,b,d,j,i,f)$ & $14,(a,b,d,j,i,f)$ & $10,(a,b,d,j,h)$ & $9,(a,b,d,j,i)$ & $7,(a,b,d,j)$ & $13,(a,b,d,j,i,f,z)$ \\    
+\end{tabular}
+\newblock
+\\ \\
+The shortest path from $a$ to $z$ is $a \rightarrow b \rightarrow d \rightarrow j \rightarrow i \rightarrow f \rightarrow z$ and is of length 13.
+\end{document}

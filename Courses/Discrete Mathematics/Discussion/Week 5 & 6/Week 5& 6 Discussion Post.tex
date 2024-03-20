@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{titling}
+\usepackage{soul}
+\usepackage{xcolor}
 \usepackage[mathscr]{euscript}
 \let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
 \usepackage[scr]{rsfso}
@@ -113,7 +115,11 @@ The LHS simplifies to the RHS
     \item By algebra and supposition of $P(k)$, the LHS can be simplified:
     \begin{align*}
         \sum_{i=1}^{k+1}i!(i^2 + 1) &= \sum_{i=1}^{k}i!(i^2 + 1) + (k+1)!((k+1)^2 + 1) \\
-        &= (k+1)!k + (k+1)!(k^2 +2k + 1 + 1) \\ 
+    \end{align*}
+    \hl{By inductive hypothesis, $\sum_{i=1}^{k}i!(i^2 + 1) \Rightarrow (k+1)!k$. Continuing,}
+    \begin{align*}
+        &\text{\hl{ $= \sum_{i=1}^{k}i!(i^2 + 1) + (k+1)!((k+1)^2 + 1)$}} \\
+        &= (k+1)!k + (k+1)!(k^2 +2k + 1 + 1) \\
         &= (k+1)!(k^2 +3k + 2) \\ 
         &= (k+1)!(k+1)(k+2) \\ 
         &= (k+2)!(k+1) \\ 
@@ -145,11 +151,11 @@ II - Recursion: New strings are formed according to the following rules:
         $0u$ and $u0$ are strings in $S$\\
     \end{center}
     where $0u$ and $u0$ are the concatenations of $u$ and 0. Each is obtained by appending 0 to the let side of $u$ and the right side of $u$ respectively.
-    \item [b.] If $u$ is any string in $S$, and $u$ contains at least two more 0's than 1's, then
+    \item [b.] \hl{If $u$ is any string in $S$, then}
     \begin{center}
-        $1u$ and $u1$ are strings in $S$\\
+        \hl{$01u$, $10u$, $u01$, $u10$, $0u1$, and $1u0$ are strings in $S$}\\
     \end{center}
-    where $1u$ and $u1$ are the concatenations of $u$ and 1. Each is obtained by appending 1 to the let side of $u$ and the right side of $u$ respectively.
+    \hl{where all six of these are the concatenations of $u$, 0, and 1. Each is obtained by appending 0 and 1 to the let side of $u$ and the right side of $u$.}
 \end{itemize}
 III - Restriction: Every string in $S$ is obtainable from the base and the recursion.
 \subsection*{ii.}

@@ -8,27 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a4de5bd8bc99881c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-              }
-            }
-          },
-          {
-            "id": "845a98aeb4c2f609",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-              }
-            }
-          },
-          {
-            "id": "75872193c6e09a00",
+            "id": "27f6ebc621fef471",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -167,19 +147,29 @@
     }
   },
   "floating": {
-    "id": "46edf5593c0f4863",
+    "id": "56ce3ff8b8831503",
     "type": "floating",
     "children": [
       {
-        "id": "63de94520fc0ba0e",
+        "id": "75ccfcbd60020b30",
         "type": "window",
         "children": [
           {
-            "id": "e5745b41e7f9041b",
+            "id": "ca3d8b3128718c0a",
             "type": "tabs",
             "children": [
               {
-                "id": "7ef3b0b2b00647c7",
+                "id": "97dfef017a5b9070",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
+                  }
+                }
+              },
+              {
+                "id": "28947c0e5491f883",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
@@ -192,8 +182,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 1408,
-        "y": 889,
+        "x": 4298,
+        "y": 515,
         "width": 1024,
         "height": 800,
         "maximize": true,
@@ -201,19 +191,19 @@
       }
     ]
   },
-  "active": "a4de5bd8bc99881c",
+  "active": "97dfef017a5b9070",
   "lastOpenFiles": [
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.synctex(busy)",
     "Documents/Textbooks/all.pdf",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.synctex.gz",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.pdf",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.aux",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.log",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 2.tex",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.synctex(busy)",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.synctex.gz",
-    "Courses/Discrete Mathematics/Week 8/NH Assignment 8 Part 1.pdf",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.synctex(busy)",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.synctex.gz",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.pdf",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.aux",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.log",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.tex",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 Quiz.synctex(busy)",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 Quiz.synctex.gz",
+    "Courses/Discrete Mathematics/Quiz/NH WK78 Quiz.pdf",
     "Courses/Discrete Mathematics/Week 2/Week 2 Notes.md",
     "Courses/Discrete Mathematics/Week 3/Week 3 Notes.md",
     "Courses/Discrete Mathematics/Week 1/Week 1 Notes.md",
