@@ -11,10 +11,8 @@
             "id": "27f6ebc621fef471",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Documents/Textbooks/all.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -67,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5086555480957,
-    "collapsed": true
+    "width": 333.5
   },
   "right": {
     "id": "4e8c70f7b3d05a52",
@@ -84,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,18 +118,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "f1d97e272a92b9bf",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 690.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,58 +143,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "floating": {
-    "id": "56ce3ff8b8831503",
-    "type": "floating",
-    "children": [
-      {
-        "id": "75ccfcbd60020b30",
-        "type": "window",
-        "children": [
-          {
-            "id": "ca3d8b3128718c0a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "97dfef017a5b9070",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-                  }
-                }
-              },
-              {
-                "id": "28947c0e5491f883",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Documents/Textbooks/Discrete Mathematics with Applications.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 4298,
-        "y": 515,
-        "width": 1024,
-        "height": 800,
-        "maximize": true,
-        "zoom": 1.5
-      }
-    ]
-  },
-  "active": "97dfef017a5b9070",
+  "active": "402feb916306a473",
   "lastOpenFiles": [
-    "Documents/Textbooks/all.pdf",
     "Documents/Textbooks/Discrete Mathematics with Applications.pdf",
+    "Documents/Textbooks/all.pdf",
     "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.synctex(busy)",
     "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.synctex.gz",
     "Courses/Discrete Mathematics/Quiz/NH WK78 PRACTICE Quiz.pdf",
